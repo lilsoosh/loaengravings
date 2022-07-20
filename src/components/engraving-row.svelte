@@ -29,12 +29,12 @@
     let engravingNodesValue = 0;
 
     let nodeSrcURLs = [
-        "../images/nodes/node_active.svg",
-        "../images/nodes/node_active_filled.svg",
-        "../images/nodes/node_active_empty.svg",
-        "../images/nodes/node_active_neg.svg",
-        "../images/nodes/node_inactive_filled.svg",
-        "../images/nodes/node_inactive_empty.svg"
+        "../../images/nodes/node_active.svg",
+        "../../images/nodes/node_active_filled.svg",
+        "../../images/nodes/node_active_empty.svg",
+        "../../images/nodes/node_active_neg.svg",
+        "../../images/nodes/node_inactive_filled.svg",
+        "../../images/nodes/node_inactive_empty.svg"
     ]
 
     let activeNodeSRC = nodeSrcURLs[0];
@@ -110,7 +110,7 @@
     const getEngravingURL = (name) => {
         let regex = /[^a-zA-Z]/g;
         name = name.replaceAll(regex,'').toLowerCase();
-        return "../images/engravings/" + name + ".png";
+        return "../../images/engravings/" + name + ".png";
     };
 
     const valueChange = (e) => {

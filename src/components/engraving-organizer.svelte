@@ -11,7 +11,7 @@
     const classChange = (e) => {
         advClass = e.detail;
         classIconURL = advClass.toLowerCase().replace(" ", "");
-        classIconURL = "../images/class_icons/png/" + classIconURL + ".png";
+        classIconURL = "../../images/class_icons/png/" + classIconURL + ".png";
     };
 </script>
 <div class="class-container">
@@ -32,32 +32,32 @@
         <th class="engraving-nodes-head top-head"><h3>Lv.3</h3></th>
         <th class="engraving-nodes-extra-head top-head"><h3>+</h3></th>
         <th class="equipment-header top-head">
-            <img src="../images/rarity_bgs/leg_bg.png" alt="Legendary Item Background" class="rarity-img">
-            <img src="../images/equipment/leg_engravingbook.png" alt="Engraving Books" class="equipment-img">
+            <img src="../../images/rarity_bgs/leg_bg.png" alt="Legendary Item Background" class="rarity-img">
+            <img src="../../images/equipment/leg_engravingbook.png" alt="Engraving Books" class="equipment-img">
         </th>
         <th class="equipment-header top-head">
-            <img src="../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
-            <img src="../images/equipment/relic_necklace.png" alt="Necklace" class="equipment-img">
+            <img src="../../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
+            <img src="../../images/equipment/relic_necklace.png" alt="Necklace" class="equipment-img">
         </th>
         <th class="equipment-header top-head">
-            <img src="../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
-            <img src="../images/equipment/relic_earring.png" alt="Earring1" class="equipment-img">
+            <img src="../../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
+            <img src="../../images/equipment/relic_earring.png" alt="Earring1" class="equipment-img">
         </th>
         <th class="equipment-header top-head">
-            <img src="../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
-            <img src="../images/equipment/relic_earring.png" alt="Earring2" class="equipment-img">
+            <img src="../../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
+            <img src="../../images/equipment/relic_earring.png" alt="Earring2" class="equipment-img">
         </th>
         <th class="equipment-header top-head">
-            <img src="../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
-            <img src="../images/equipment/relic_ring.png" alt="Ring1" class="equipment-img">
+            <img src="../../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
+            <img src="../../images/equipment/relic_ring.png" alt="Ring1" class="equipment-img">
         </th>
         <th class="equipment-header top-head">
-            <img src="../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
-            <img src="../images/equipment/relic_ring.png" alt="Ring2" class="equipment-img">
+            <img src="../../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
+            <img src="../../images/equipment/relic_ring.png" alt="Ring2" class="equipment-img">
         </th>
         <th class="equipment-header top-head">
-            <img src="../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
-            <img src="../images/equipment/relic_stone.png" alt="Ability Stone" class="equipment-img">
+            <img src="../../images/rarity_bgs/relic_bg.png" alt="Relic Item Background" class="rarity-img">
+            <img src="../../images/equipment/relic_stone.png" alt="Ability Stone" class="equipment-img">
         </th>
     </tr>
     {#each $SelectedEngravings as engravingRow (engravingRow.id)}
