@@ -10,7 +10,7 @@
 <header>
     <div class="header-container">
         <div class="headerBG"></div>
-        <img src="../images/lil_soosh.png" alt="logo" class="logo">
+        <img src="../public/images/lil_soosh.png" alt="logo" class="logo">
         <h1 class="site-title">SOOSH.site</h1>
         <ul>
             {#each tabs as tab}

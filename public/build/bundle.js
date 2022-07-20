@@ -872,9 +872,9 @@ var app = (function () {
     			t1 = space();
     			attr_dev(div, "class", "svelte-1levd9w");
     			toggle_class(div, "active", /*tab*/ ctx[4] === /*activeTab*/ ctx[1]);
-    			add_location(div, file$6, 17, 16, 511);
+    			add_location(div, file$6, 17, 16, 518);
     			attr_dev(li, "class", "svelte-1levd9w");
-    			add_location(li, file$6, 16, 12, 446);
+    			add_location(li, file$6, 16, 12, 453);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -951,14 +951,14 @@ var app = (function () {
 
     			attr_dev(div0, "class", "headerBG svelte-1levd9w");
     			add_location(div0, file$6, 11, 8, 240);
-    			if (!src_url_equal(img.src, img_src_value = "../images/lil_soosh.png")) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = "../public/images/lil_soosh.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "logo");
     			attr_dev(img, "class", "logo svelte-1levd9w");
     			add_location(img, file$6, 12, 8, 278);
     			attr_dev(h1, "class", "site-title svelte-1levd9w");
-    			add_location(h1, file$6, 13, 8, 347);
+    			add_location(h1, file$6, 13, 8, 354);
     			attr_dev(ul, "class", "svelte-1levd9w");
-    			add_location(ul, file$6, 14, 8, 395);
+    			add_location(ul, file$6, 14, 8, 402);
     			attr_dev(div1, "class", "header-container svelte-1levd9w");
     			add_location(div1, file$6, 10, 4, 200);
     			add_location(header, file$6, 9, 0, 186);
@@ -2681,26 +2681,26 @@ var app = (function () {
 
     function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[39] = list[i];
-    	child_ctx[41] = i;
+    	child_ctx[45] = list[i];
+    	child_ctx[47] = i;
     	return child_ctx;
     }
 
     function get_each_context_1$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[39] = list[i];
-    	child_ctx[41] = i;
+    	child_ctx[45] = list[i];
+    	child_ctx[47] = i;
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[39] = list[i];
-    	child_ctx[41] = i;
+    	child_ctx[45] = list[i];
+    	child_ctx[47] = i;
     	return child_ctx;
     }
 
-    // (181:12) {:else}
+    // (188:12) {:else}
     function create_else_block_6(ctx) {
     	let img;
     	let img_src_value;
@@ -2711,7 +2711,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*emptyNodeSRC*/ ctx[10])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 181, 16, 7151);
+    			add_location(img, file$2, 188, 16, 7574);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2730,14 +2730,14 @@ var app = (function () {
     		block,
     		id: create_else_block_6.name,
     		type: "else",
-    		source: "(181:12) {:else}",
+    		source: "(188:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (175:12) {#if engravingNodesValue - i > 0}
+    // (182:12) {#if engravingNodesValue - i > 0}
     function create_if_block_6(ctx) {
     	let if_block_anchor;
 
@@ -2781,14 +2781,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(175:12) {#if engravingNodesValue - i > 0}",
+    		source: "(182:12) {#if engravingNodesValue - i > 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (178:16) {:else}
+    // (185:16) {:else}
     function create_else_block_5(ctx) {
     	let img;
     	let img_src_value;
@@ -2799,7 +2799,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*filledNodeSRC*/ ctx[9])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 178, 20, 7030);
+    			add_location(img, file$2, 185, 20, 7453);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2818,14 +2818,14 @@ var app = (function () {
     		block,
     		id: create_else_block_5.name,
     		type: "else",
-    		source: "(178:16) {:else}",
+    		source: "(185:16) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (176:16) {#if engravingNodesValue >= 5}
+    // (183:16) {#if engravingNodesValue >= 5}
     function create_if_block_7(ctx) {
     	let img;
     	let img_src_value;
@@ -2836,7 +2836,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*activeNodeSRC*/ ctx[8])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 176, 20, 6924);
+    			add_location(img, file$2, 183, 20, 7347);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2855,19 +2855,19 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(176:16) {#if engravingNodesValue >= 5}",
+    		source: "(183:16) {#if engravingNodesValue >= 5}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (174:8) {#each {length:5} as _, i}
+    // (181:8) {#each {length:5} as _, i}
     function create_each_block_2(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*engravingNodesValue*/ ctx[7] - /*i*/ ctx[41] > 0) return create_if_block_6;
+    		if (/*engravingNodesValue*/ ctx[7] - /*i*/ ctx[47] > 0) return create_if_block_6;
     		return create_else_block_6;
     	}
 
@@ -2906,14 +2906,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(174:8) {#each {length:5} as _, i}",
+    		source: "(181:8) {#each {length:5} as _, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (194:12) {:else}
+    // (201:12) {:else}
     function create_else_block_4(ctx) {
     	let img;
     	let img_src_value;
@@ -2924,7 +2924,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*emptyNodeSRC*/ ctx[10])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 194, 16, 7688);
+    			add_location(img, file$2, 201, 16, 8111);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2943,14 +2943,14 @@ var app = (function () {
     		block,
     		id: create_else_block_4.name,
     		type: "else",
-    		source: "(194:12) {:else}",
+    		source: "(201:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (188:12) {#if engravingNodesValue - i - 5 > 0}
+    // (195:12) {#if engravingNodesValue - i - 5 > 0}
     function create_if_block_4(ctx) {
     	let if_block_anchor;
 
@@ -2994,14 +2994,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(188:12) {#if engravingNodesValue - i - 5 > 0}",
+    		source: "(195:12) {#if engravingNodesValue - i - 5 > 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (191:16) {:else}
+    // (198:16) {:else}
     function create_else_block_3(ctx) {
     	let img;
     	let img_src_value;
@@ -3012,7 +3012,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*filledNodeSRC*/ ctx[9])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 191, 20, 7567);
+    			add_location(img, file$2, 198, 20, 7990);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3031,14 +3031,14 @@ var app = (function () {
     		block,
     		id: create_else_block_3.name,
     		type: "else",
-    		source: "(191:16) {:else}",
+    		source: "(198:16) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (189:16) {#if engravingNodesValue >= 10}
+    // (196:16) {#if engravingNodesValue >= 10}
     function create_if_block_5(ctx) {
     	let img;
     	let img_src_value;
@@ -3049,7 +3049,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*activeNodeSRC*/ ctx[8])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 189, 20, 7461);
+    			add_location(img, file$2, 196, 20, 7884);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3068,19 +3068,19 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(189:16) {#if engravingNodesValue >= 10}",
+    		source: "(196:16) {#if engravingNodesValue >= 10}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (187:8) {#each {length:5} as _, i}
+    // (194:8) {#each {length:5} as _, i}
     function create_each_block_1$1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*engravingNodesValue*/ ctx[7] - /*i*/ ctx[41] - 5 > 0) return create_if_block_4;
+    		if (/*engravingNodesValue*/ ctx[7] - /*i*/ ctx[47] - 5 > 0) return create_if_block_4;
     		return create_else_block_4;
     	}
 
@@ -3119,14 +3119,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(187:8) {#each {length:5} as _, i}",
+    		source: "(194:8) {#each {length:5} as _, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (207:12) {:else}
+    // (214:12) {:else}
     function create_else_block_2(ctx) {
     	let img;
     	let img_src_value;
@@ -3137,7 +3137,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*emptyNodeSRC*/ ctx[10])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 207, 16, 8226);
+    			add_location(img, file$2, 214, 16, 8649);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3156,14 +3156,14 @@ var app = (function () {
     		block,
     		id: create_else_block_2.name,
     		type: "else",
-    		source: "(207:12) {:else}",
+    		source: "(214:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (201:12) {#if engravingNodesValue - i - 10 > 0}
+    // (208:12) {#if engravingNodesValue - i - 10 > 0}
     function create_if_block_2(ctx) {
     	let if_block_anchor;
 
@@ -3207,14 +3207,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(201:12) {#if engravingNodesValue - i - 10 > 0}",
+    		source: "(208:12) {#if engravingNodesValue - i - 10 > 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (204:16) {:else}
+    // (211:16) {:else}
     function create_else_block_1(ctx) {
     	let img;
     	let img_src_value;
@@ -3225,7 +3225,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*filledNodeSRC*/ ctx[9])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 204, 20, 8105);
+    			add_location(img, file$2, 211, 20, 8528);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3244,14 +3244,14 @@ var app = (function () {
     		block,
     		id: create_else_block_1.name,
     		type: "else",
-    		source: "(204:16) {:else}",
+    		source: "(211:16) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (202:16) {#if engravingNodesValue >= 15}
+    // (209:16) {#if engravingNodesValue >= 15}
     function create_if_block_3(ctx) {
     	let img;
     	let img_src_value;
@@ -3262,7 +3262,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*activeNodeSRC*/ ctx[8])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 202, 20, 7999);
+    			add_location(img, file$2, 209, 20, 8422);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3281,19 +3281,19 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(202:16) {#if engravingNodesValue >= 15}",
+    		source: "(209:16) {#if engravingNodesValue >= 15}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (200:8) {#each {length:5} as _, i}
+    // (207:8) {#each {length:5} as _, i}
     function create_each_block$1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type_4(ctx, dirty) {
-    		if (/*engravingNodesValue*/ ctx[7] - /*i*/ ctx[41] - 10 > 0) return create_if_block_2;
+    		if (/*engravingNodesValue*/ ctx[7] - /*i*/ ctx[47] - 10 > 0) return create_if_block_2;
     		return create_else_block_2;
     	}
 
@@ -3332,14 +3332,14 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(200:8) {#each {length:5} as _, i}",
+    		source: "(207:8) {#each {length:5} as _, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (216:12) {:else}
+    // (223:12) {:else}
     function create_else_block(ctx) {
     	let t;
 
@@ -3360,14 +3360,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(216:12) {:else}",
+    		source: "(223:12) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (214:12) {#if engravingNodesValue > 15}
+    // (221:12) {#if engravingNodesValue > 15}
     function create_if_block_1(ctx) {
     	let t0;
     	let t1_value = /*engravingNodesValue*/ ctx[7] - 15 + "";
@@ -3395,14 +3395,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(214:12) {#if engravingNodesValue > 15}",
+    		source: "(221:12) {#if engravingNodesValue > 15}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (257:0) {#if !addEngravingRow & !negativeEngraving}
+    // (264:0) {#if !addEngravingRow & !negativeEngraving}
     function create_if_block$1(ctx) {
     	let div;
     	let svg;
@@ -3424,23 +3424,23 @@ var app = (function () {
     			path2 = svg_element("path");
     			attr_dev(path0, "d", "M0 0h24v24H0z");
     			attr_dev(path0, "fill", "none");
-    			add_location(path0, file$2, 258, 143, 11332);
+    			add_location(path0, file$2, 265, 143, 11884);
     			attr_dev(path1, "d", "M0 0h24v24H0V0z");
     			attr_dev(path1, "fill", "none");
-    			add_location(path1, file$2, 258, 186, 11375);
+    			add_location(path1, file$2, 265, 186, 11927);
     			attr_dev(path2, "d", "M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm2.46-7.12l1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12zM15.5 4l-1-1h-5l-1 1H5v2h14V4z");
-    			add_location(path2, file$2, 258, 231, 11420);
+    			add_location(path2, file$2, 265, 231, 11972);
     			attr_dev(svg, "width", "24");
     			attr_dev(svg, "height", "24");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 24 24");
     			attr_dev(svg, "color", "#000");
     			attr_dev(svg, "class", "delete svelte-inzqfp");
-    			add_location(svg, file$2, 258, 8, 11197);
+    			add_location(svg, file$2, 265, 8, 11749);
     			set_style(div, "position", "relative");
     			set_style(div, "width", "0");
     			set_style(div, "height", "0");
-    			add_location(div, file$2, 257, 4, 11088);
+    			add_location(div, file$2, 264, 4, 11640);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3451,7 +3451,7 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(svg, "click", /*handleDelete*/ ctx[16], false, false, false);
+    				dispose = listen_dev(svg, "click", /*handleDelete*/ ctx[22], false, false, false);
     				mounted = true;
     			}
     		},
@@ -3484,7 +3484,7 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(257:0) {#if !addEngravingRow & !negativeEngraving}",
+    		source: "(264:0) {#if !addEngravingRow & !negativeEngraving}",
     		ctx
     	});
 
@@ -3553,7 +3553,7 @@ var app = (function () {
     	let dispose;
 
     	function filterdropdown_inputValue_binding(value) {
-    		/*filterdropdown_inputValue_binding*/ ctx[21](value);
+    		/*filterdropdown_inputValue_binding*/ ctx[27](value);
     	}
 
     	let filterdropdown_props = {
@@ -3574,8 +3574,8 @@ var app = (function () {
     		});
 
     	binding_callbacks.push(() => bind(filterdropdown, 'inputValue', filterdropdown_inputValue_binding));
-    	filterdropdown.$on("blur", /*engravingDropdownBlur*/ ctx[15]);
-    	filterdropdown.$on("valueChange", /*engravingChange*/ ctx[13]);
+    	filterdropdown.$on("blur", /*engravingDropdownBlur*/ ctx[21]);
+    	filterdropdown.$on("valueChange", /*engravingChange*/ ctx[19]);
     	let each_value_2 = { length: 5 };
     	validate_each_argument(each_value_2);
     	let each_blocks_2 = [];
@@ -3609,16 +3609,18 @@ var app = (function () {
     	let if_block0 = current_block_type(ctx);
 
     	function selectdropdown0_value_binding(value) {
-    		/*selectdropdown0_value_binding*/ ctx[22](value);
+    		/*selectdropdown0_value_binding*/ ctx[28](value);
     	}
 
     	let selectdropdown0_props = {
-    		menuItems: ['-', '+3', '+6', '+9', '+12', '+18'],
+    		menuItems: /*negativeEngraving*/ ctx[3]
+    		? /*bookMenuItemsNeg*/ ctx[16]
+    		: /*bookMenuItems*/ ctx[13],
     		width: "50px",
     		fontSize: "12px",
     		id: "0",
     		firstValueNull: "true",
-    		disabled: /*addEngravingRow*/ ctx[2]
+    		disabled: /*addEngravingRow*/ ctx[2] || /*negativeEngraving*/ ctx[3]
     	};
 
     	if (/*engravingNodes*/ ctx[1][0] !== void 0) {
@@ -3631,14 +3633,16 @@ var app = (function () {
     		});
 
     	binding_callbacks.push(() => bind(selectdropdown0, 'value', selectdropdown0_value_binding));
-    	selectdropdown0.$on("valueChange", /*valueChange*/ ctx[14]);
+    	selectdropdown0.$on("valueChange", /*valueChange*/ ctx[20]);
 
     	function selectdropdown1_value_binding(value) {
-    		/*selectdropdown1_value_binding*/ ctx[23](value);
+    		/*selectdropdown1_value_binding*/ ctx[29](value);
     	}
 
     	let selectdropdown1_props = {
-    		menuItems: ['-', '+1', '+2', '+3', '+4', '+5', '+6'],
+    		menuItems: /*negativeEngraving*/ ctx[3]
+    		? /*accessoryMenuItemsNeg*/ ctx[17]
+    		: /*accessoryMenuItems*/ ctx[14],
     		width: "50px",
     		fontSize: "12px",
     		id: "1",
@@ -3656,14 +3660,16 @@ var app = (function () {
     		});
 
     	binding_callbacks.push(() => bind(selectdropdown1, 'value', selectdropdown1_value_binding));
-    	selectdropdown1.$on("valueChange", /*valueChange*/ ctx[14]);
+    	selectdropdown1.$on("valueChange", /*valueChange*/ ctx[20]);
 
     	function selectdropdown2_value_binding(value) {
-    		/*selectdropdown2_value_binding*/ ctx[24](value);
+    		/*selectdropdown2_value_binding*/ ctx[30](value);
     	}
 
     	let selectdropdown2_props = {
-    		menuItems: ['-', '+1', '+2', '+3', '+4', '+5', '+6'],
+    		menuItems: /*negativeEngraving*/ ctx[3]
+    		? /*accessoryMenuItemsNeg*/ ctx[17]
+    		: /*accessoryMenuItems*/ ctx[14],
     		width: "50px",
     		fontSize: "12px",
     		id: "2",
@@ -3681,14 +3687,16 @@ var app = (function () {
     		});
 
     	binding_callbacks.push(() => bind(selectdropdown2, 'value', selectdropdown2_value_binding));
-    	selectdropdown2.$on("valueChange", /*valueChange*/ ctx[14]);
+    	selectdropdown2.$on("valueChange", /*valueChange*/ ctx[20]);
 
     	function selectdropdown3_value_binding(value) {
-    		/*selectdropdown3_value_binding*/ ctx[25](value);
+    		/*selectdropdown3_value_binding*/ ctx[31](value);
     	}
 
     	let selectdropdown3_props = {
-    		menuItems: ['-', '+1', '+2', '+3', '+4', '+5', '+6'],
+    		menuItems: /*negativeEngraving*/ ctx[3]
+    		? /*accessoryMenuItemsNeg*/ ctx[17]
+    		: /*accessoryMenuItems*/ ctx[14],
     		width: "50px",
     		fontSize: "12px",
     		id: "3",
@@ -3706,14 +3714,16 @@ var app = (function () {
     		});
 
     	binding_callbacks.push(() => bind(selectdropdown3, 'value', selectdropdown3_value_binding));
-    	selectdropdown3.$on("valueChange", /*valueChange*/ ctx[14]);
+    	selectdropdown3.$on("valueChange", /*valueChange*/ ctx[20]);
 
     	function selectdropdown4_value_binding(value) {
-    		/*selectdropdown4_value_binding*/ ctx[26](value);
+    		/*selectdropdown4_value_binding*/ ctx[32](value);
     	}
 
     	let selectdropdown4_props = {
-    		menuItems: ['-', '+1', '+2', '+3', '+4', '+5', '+6'],
+    		menuItems: /*negativeEngraving*/ ctx[3]
+    		? /*accessoryMenuItemsNeg*/ ctx[17]
+    		: /*accessoryMenuItems*/ ctx[14],
     		width: "50px",
     		fontSize: "12px",
     		id: "4",
@@ -3731,14 +3741,16 @@ var app = (function () {
     		});
 
     	binding_callbacks.push(() => bind(selectdropdown4, 'value', selectdropdown4_value_binding));
-    	selectdropdown4.$on("valueChange", /*valueChange*/ ctx[14]);
+    	selectdropdown4.$on("valueChange", /*valueChange*/ ctx[20]);
 
     	function selectdropdown5_value_binding(value) {
-    		/*selectdropdown5_value_binding*/ ctx[27](value);
+    		/*selectdropdown5_value_binding*/ ctx[33](value);
     	}
 
     	let selectdropdown5_props = {
-    		menuItems: ['-', '+1', '+2', '+3', '+4', '+5', '+6'],
+    		menuItems: /*negativeEngraving*/ ctx[3]
+    		? /*accessoryMenuItemsNeg*/ ctx[17]
+    		: /*accessoryMenuItems*/ ctx[14],
     		width: "50px",
     		fontSize: "12px",
     		id: "5",
@@ -3756,14 +3768,16 @@ var app = (function () {
     		});
 
     	binding_callbacks.push(() => bind(selectdropdown5, 'value', selectdropdown5_value_binding));
-    	selectdropdown5.$on("valueChange", /*valueChange*/ ctx[14]);
+    	selectdropdown5.$on("valueChange", /*valueChange*/ ctx[20]);
 
     	function selectdropdown6_value_binding(value) {
-    		/*selectdropdown6_value_binding*/ ctx[28](value);
+    		/*selectdropdown6_value_binding*/ ctx[34](value);
     	}
 
     	let selectdropdown6_props = {
-    		menuItems: ['-', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9', '+10'],
+    		menuItems: /*negativeEngraving*/ ctx[3]
+    		? /*stoneMenuItemsNeg*/ ctx[18]
+    		: /*stoneMenuItems*/ ctx[15],
     		width: "50px",
     		fontSize: "12px",
     		id: "6",
@@ -3781,7 +3795,7 @@ var app = (function () {
     		});
 
     	binding_callbacks.push(() => bind(selectdropdown6, 'value', selectdropdown6_value_binding));
-    	selectdropdown6.$on("valueChange", /*valueChange*/ ctx[14]);
+    	selectdropdown6.$on("valueChange", /*valueChange*/ ctx[20]);
     	let if_block1 = !/*addEngravingRow*/ ctx[2] & !/*negativeEngraving*/ ctx[3] && create_if_block$1(ctx);
 
     	const block = {
@@ -3852,54 +3866,54 @@ var app = (function () {
     			attr_dev(img, "alt", /*engraving*/ ctx[0]);
     			attr_dev(img, "class", "engraving-img svelte-inzqfp");
     			toggle_class(img, "inactive-engraving", /*engravingNodesValue*/ ctx[7] < 5);
-    			add_location(img, file$2, 169, 8, 6310);
+    			add_location(img, file$2, 176, 8, 6733);
     			attr_dev(div0, "class", "engraving-dropdown svelte-inzqfp");
-    			add_location(div0, file$2, 170, 8, 6438);
+    			add_location(div0, file$2, 177, 8, 6861);
     			attr_dev(td0, "class", "engraving-selection svelte-inzqfp");
-    			add_location(td0, file$2, 168, 4, 6268);
+    			add_location(td0, file$2, 175, 4, 6691);
     			attr_dev(td1, "class", "engraving-nodes nodes-level1 svelte-inzqfp");
-    			add_location(td1, file$2, 172, 4, 6730);
+    			add_location(td1, file$2, 179, 4, 7153);
     			attr_dev(td2, "class", "engraving-nodes nodes-level2 svelte-inzqfp");
-    			add_location(td2, file$2, 185, 4, 7262);
+    			add_location(td2, file$2, 192, 4, 7685);
     			attr_dev(td3, "class", "engraving-nodes nodes-level3 svelte-inzqfp");
-    			add_location(td3, file$2, 198, 4, 7799);
+    			add_location(td3, file$2, 205, 4, 8222);
     			attr_dev(h4, "class", "svelte-inzqfp");
     			toggle_class(h4, "extra-nodes", /*engravingNodesValue*/ ctx[7] > 15);
-    			add_location(h4, file$2, 212, 8, 8381);
+    			add_location(h4, file$2, 219, 8, 8804);
     			attr_dev(td4, "class", "engraving-nodes-extra svelte-inzqfp");
-    			add_location(td4, file$2, 211, 4, 8337);
+    			add_location(td4, file$2, 218, 4, 8760);
     			attr_dev(div1, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div1, file$2, 221, 8, 8655);
+    			add_location(div1, file$2, 228, 8, 9078);
     			attr_dev(td5, "class", "equipment-bonuses book svelte-inzqfp");
-    			add_location(td5, file$2, 220, 4, 8610);
+    			add_location(td5, file$2, 227, 4, 9033);
     			attr_dev(div2, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div2, file$2, 226, 8, 8997);
+    			add_location(div2, file$2, 233, 8, 9456);
     			attr_dev(td6, "class", "equipment-bonuses necklace svelte-inzqfp");
-    			add_location(td6, file$2, 225, 4, 8948);
+    			add_location(td6, file$2, 232, 4, 9407);
     			attr_dev(div3, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div3, file$2, 231, 8, 9342);
+    			add_location(div3, file$2, 238, 8, 9822);
     			attr_dev(td7, "class", "equipment-bonuses earring svelte-inzqfp");
-    			add_location(td7, file$2, 230, 4, 9294);
+    			add_location(td7, file$2, 237, 4, 9774);
     			attr_dev(div4, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div4, file$2, 236, 8, 9687);
+    			add_location(div4, file$2, 243, 8, 10188);
     			attr_dev(td8, "class", "equipment-bonuses earring svelte-inzqfp");
-    			add_location(td8, file$2, 235, 4, 9639);
+    			add_location(td8, file$2, 242, 4, 10140);
     			attr_dev(div5, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div5, file$2, 241, 8, 10029);
+    			add_location(div5, file$2, 248, 8, 10551);
     			attr_dev(td9, "class", "equipment-bonuses ring svelte-inzqfp");
-    			add_location(td9, file$2, 240, 4, 9984);
+    			add_location(td9, file$2, 247, 4, 10506);
     			attr_dev(div6, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div6, file$2, 246, 8, 10371);
+    			add_location(div6, file$2, 253, 8, 10914);
     			attr_dev(td10, "class", "equipment-bonuses ring svelte-inzqfp");
-    			add_location(td10, file$2, 245, 4, 10326);
+    			add_location(td10, file$2, 252, 4, 10869);
     			attr_dev(div7, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div7, file$2, 251, 8, 10714);
+    			add_location(div7, file$2, 258, 8, 11278);
     			attr_dev(td11, "class", "equipment-bonuses stone svelte-inzqfp");
-    			add_location(td11, file$2, 250, 4, 10668);
+    			add_location(td11, file$2, 257, 4, 11232);
     			attr_dev(tr, "class", "row-container svelte-inzqfp");
     			toggle_class(tr, "in-transition", /*inTransition*/ ctx[11]);
     			toggle_class(tr, "error", /*error*/ ctx[12]);
-    			add_location(tr, file$2, 167, 0, 5970);
+    			add_location(tr, file$2, 174, 0, 6393);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3971,9 +3985,9 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(tr, "introstart", /*introstart_handler*/ ctx[29], false, false, false),
-    					listen_dev(tr, "introend", /*introend_handler*/ ctx[30], false, false, false),
-    					listen_dev(tr, "outrostart", /*outrostart_handler*/ ctx[31], false, false, false)
+    					listen_dev(tr, "introstart", /*introstart_handler*/ ctx[35], false, false, false),
+    					listen_dev(tr, "introend", /*introend_handler*/ ctx[36], false, false, false),
+    					listen_dev(tr, "outrostart", /*outrostart_handler*/ ctx[37], false, false, false)
     				];
 
     				mounted = true;
@@ -4093,7 +4107,12 @@ var app = (function () {
     			}
 
     			const selectdropdown0_changes = {};
-    			if (dirty[0] & /*addEngravingRow*/ 4) selectdropdown0_changes.disabled = /*addEngravingRow*/ ctx[2];
+
+    			if (dirty[0] & /*negativeEngraving*/ 8) selectdropdown0_changes.menuItems = /*negativeEngraving*/ ctx[3]
+    			? /*bookMenuItemsNeg*/ ctx[16]
+    			: /*bookMenuItems*/ ctx[13];
+
+    			if (dirty[0] & /*addEngravingRow, negativeEngraving*/ 12) selectdropdown0_changes.disabled = /*addEngravingRow*/ ctx[2] || /*negativeEngraving*/ ctx[3];
 
     			if (!updating_value && dirty[0] & /*engravingNodes*/ 2) {
     				updating_value = true;
@@ -4103,6 +4122,11 @@ var app = (function () {
 
     			selectdropdown0.$set(selectdropdown0_changes);
     			const selectdropdown1_changes = {};
+
+    			if (dirty[0] & /*negativeEngraving*/ 8) selectdropdown1_changes.menuItems = /*negativeEngraving*/ ctx[3]
+    			? /*accessoryMenuItemsNeg*/ ctx[17]
+    			: /*accessoryMenuItems*/ ctx[14];
+
     			if (dirty[0] & /*addEngravingRow*/ 4) selectdropdown1_changes.disabled = /*addEngravingRow*/ ctx[2];
 
     			if (!updating_value_1 && dirty[0] & /*engravingNodes*/ 2) {
@@ -4113,6 +4137,11 @@ var app = (function () {
 
     			selectdropdown1.$set(selectdropdown1_changes);
     			const selectdropdown2_changes = {};
+
+    			if (dirty[0] & /*negativeEngraving*/ 8) selectdropdown2_changes.menuItems = /*negativeEngraving*/ ctx[3]
+    			? /*accessoryMenuItemsNeg*/ ctx[17]
+    			: /*accessoryMenuItems*/ ctx[14];
+
     			if (dirty[0] & /*addEngravingRow*/ 4) selectdropdown2_changes.disabled = /*addEngravingRow*/ ctx[2];
 
     			if (!updating_value_2 && dirty[0] & /*engravingNodes*/ 2) {
@@ -4123,6 +4152,11 @@ var app = (function () {
 
     			selectdropdown2.$set(selectdropdown2_changes);
     			const selectdropdown3_changes = {};
+
+    			if (dirty[0] & /*negativeEngraving*/ 8) selectdropdown3_changes.menuItems = /*negativeEngraving*/ ctx[3]
+    			? /*accessoryMenuItemsNeg*/ ctx[17]
+    			: /*accessoryMenuItems*/ ctx[14];
+
     			if (dirty[0] & /*addEngravingRow*/ 4) selectdropdown3_changes.disabled = /*addEngravingRow*/ ctx[2];
 
     			if (!updating_value_3 && dirty[0] & /*engravingNodes*/ 2) {
@@ -4133,6 +4167,11 @@ var app = (function () {
 
     			selectdropdown3.$set(selectdropdown3_changes);
     			const selectdropdown4_changes = {};
+
+    			if (dirty[0] & /*negativeEngraving*/ 8) selectdropdown4_changes.menuItems = /*negativeEngraving*/ ctx[3]
+    			? /*accessoryMenuItemsNeg*/ ctx[17]
+    			: /*accessoryMenuItems*/ ctx[14];
+
     			if (dirty[0] & /*addEngravingRow*/ 4) selectdropdown4_changes.disabled = /*addEngravingRow*/ ctx[2];
 
     			if (!updating_value_4 && dirty[0] & /*engravingNodes*/ 2) {
@@ -4143,6 +4182,11 @@ var app = (function () {
 
     			selectdropdown4.$set(selectdropdown4_changes);
     			const selectdropdown5_changes = {};
+
+    			if (dirty[0] & /*negativeEngraving*/ 8) selectdropdown5_changes.menuItems = /*negativeEngraving*/ ctx[3]
+    			? /*accessoryMenuItemsNeg*/ ctx[17]
+    			: /*accessoryMenuItems*/ ctx[14];
+
     			if (dirty[0] & /*addEngravingRow*/ 4) selectdropdown5_changes.disabled = /*addEngravingRow*/ ctx[2];
 
     			if (!updating_value_5 && dirty[0] & /*engravingNodes*/ 2) {
@@ -4153,6 +4197,11 @@ var app = (function () {
 
     			selectdropdown5.$set(selectdropdown5_changes);
     			const selectdropdown6_changes = {};
+
+    			if (dirty[0] & /*negativeEngraving*/ 8) selectdropdown6_changes.menuItems = /*negativeEngraving*/ ctx[3]
+    			? /*stoneMenuItemsNeg*/ ctx[18]
+    			: /*stoneMenuItems*/ ctx[15];
+
     			if (dirty[0] & /*addEngravingRow*/ 4) selectdropdown6_changes.disabled = /*addEngravingRow*/ ctx[2];
 
     			if (!updating_value_6 && dirty[0] & /*engravingNodes*/ 2) {
@@ -4275,15 +4324,15 @@ var app = (function () {
     	let $SelectedClass;
     	let $ClassEngravingStore;
     	validate_store(CombatEngravingStore, 'CombatEngravingStore');
-    	component_subscribe($$self, CombatEngravingStore, $$value => $$invalidate(18, $CombatEngravingStore = $$value));
+    	component_subscribe($$self, CombatEngravingStore, $$value => $$invalidate(24, $CombatEngravingStore = $$value));
     	validate_store(SelectedEngravings, 'SelectedEngravings');
-    	component_subscribe($$self, SelectedEngravings, $$value => $$invalidate(32, $SelectedEngravings = $$value));
+    	component_subscribe($$self, SelectedEngravings, $$value => $$invalidate(38, $SelectedEngravings = $$value));
     	validate_store(NegativeEngravings, 'NegativeEngravings');
-    	component_subscribe($$self, NegativeEngravings, $$value => $$invalidate(33, $NegativeEngravings = $$value));
+    	component_subscribe($$self, NegativeEngravings, $$value => $$invalidate(39, $NegativeEngravings = $$value));
     	validate_store(SelectedClass, 'SelectedClass');
-    	component_subscribe($$self, SelectedClass, $$value => $$invalidate(19, $SelectedClass = $$value));
+    	component_subscribe($$self, SelectedClass, $$value => $$invalidate(25, $SelectedClass = $$value));
     	validate_store(ClassEngravingStore, 'ClassEngravingStore');
-    	component_subscribe($$self, ClassEngravingStore, $$value => $$invalidate(20, $ClassEngravingStore = $$value));
+    	component_subscribe($$self, ClassEngravingStore, $$value => $$invalidate(26, $ClassEngravingStore = $$value));
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Engraving_row', slots, []);
     	let { engraving = '' } = $$props;
@@ -4293,8 +4342,14 @@ var app = (function () {
     	let { negativeEngraving = false } = $$props;
     	let engravingMenuItems = [];
     	let engravingImgURL = '';
-    	let { engravingNodes = ['-', '-', '-', '-', '-', '-', '-'] } = $$props;
     	let engravingNodesValue = 0;
+    	let { engravingNodes = ['-', '-', '-', '-', '-', '-', '-'] } = $$props;
+    	let bookMenuItems = ['-', '+3', '+6', '+9', '+12', '+18'];
+    	let accessoryMenuItems = ['-', '+1', '+2', '+3', '+4', '+5', '+6'];
+    	let stoneMenuItems = ['-', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9', '+10'];
+    	let bookMenuItemsNeg = ['-'];
+    	let accessoryMenuItemsNeg = ['-', '+1', '+2', '+3'];
+    	let stoneMenuItemsNeg = ['-', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9', '+10'];
 
     	let nodeSrcURLs = [
     		"../public/images/nodes/node_active.svg",
@@ -4521,7 +4576,7 @@ var app = (function () {
 
     	$$self.$$set = $$props => {
     		if ('engraving' in $$props) $$invalidate(0, engraving = $$props.engraving);
-    		if ('id' in $$props) $$invalidate(17, id = $$props.id);
+    		if ('id' in $$props) $$invalidate(23, id = $$props.id);
     		if ('addEngravingRow' in $$props) $$invalidate(2, addEngravingRow = $$props.addEngravingRow);
     		if ('negativeEngraving' in $$props) $$invalidate(3, negativeEngraving = $$props.negativeEngraving);
     		if ('engravingNodes' in $$props) $$invalidate(1, engravingNodes = $$props.engravingNodes);
@@ -4547,8 +4602,14 @@ var app = (function () {
     		negativeEngraving,
     		engravingMenuItems,
     		engravingImgURL,
-    		engravingNodes,
     		engravingNodesValue,
+    		engravingNodes,
+    		bookMenuItems,
+    		accessoryMenuItems,
+    		stoneMenuItems,
+    		bookMenuItemsNeg,
+    		accessoryMenuItemsNeg,
+    		stoneMenuItemsNeg,
     		nodeSrcURLs,
     		activeNodeSRC,
     		filledNodeSRC,
@@ -4573,13 +4634,19 @@ var app = (function () {
     	$$self.$inject_state = $$props => {
     		if ('engraving' in $$props) $$invalidate(0, engraving = $$props.engraving);
     		if ('engravingInput' in $$props) $$invalidate(4, engravingInput = $$props.engravingInput);
-    		if ('id' in $$props) $$invalidate(17, id = $$props.id);
+    		if ('id' in $$props) $$invalidate(23, id = $$props.id);
     		if ('addEngravingRow' in $$props) $$invalidate(2, addEngravingRow = $$props.addEngravingRow);
     		if ('negativeEngraving' in $$props) $$invalidate(3, negativeEngraving = $$props.negativeEngraving);
     		if ('engravingMenuItems' in $$props) $$invalidate(5, engravingMenuItems = $$props.engravingMenuItems);
     		if ('engravingImgURL' in $$props) $$invalidate(6, engravingImgURL = $$props.engravingImgURL);
-    		if ('engravingNodes' in $$props) $$invalidate(1, engravingNodes = $$props.engravingNodes);
     		if ('engravingNodesValue' in $$props) $$invalidate(7, engravingNodesValue = $$props.engravingNodesValue);
+    		if ('engravingNodes' in $$props) $$invalidate(1, engravingNodes = $$props.engravingNodes);
+    		if ('bookMenuItems' in $$props) $$invalidate(13, bookMenuItems = $$props.bookMenuItems);
+    		if ('accessoryMenuItems' in $$props) $$invalidate(14, accessoryMenuItems = $$props.accessoryMenuItems);
+    		if ('stoneMenuItems' in $$props) $$invalidate(15, stoneMenuItems = $$props.stoneMenuItems);
+    		if ('bookMenuItemsNeg' in $$props) $$invalidate(16, bookMenuItemsNeg = $$props.bookMenuItemsNeg);
+    		if ('accessoryMenuItemsNeg' in $$props) $$invalidate(17, accessoryMenuItemsNeg = $$props.accessoryMenuItemsNeg);
+    		if ('stoneMenuItemsNeg' in $$props) $$invalidate(18, stoneMenuItemsNeg = $$props.stoneMenuItemsNeg);
     		if ('nodeSrcURLs' in $$props) nodeSrcURLs = $$props.nodeSrcURLs;
     		if ('activeNodeSRC' in $$props) $$invalidate(8, activeNodeSRC = $$props.activeNodeSRC);
     		if ('filledNodeSRC' in $$props) $$invalidate(9, filledNodeSRC = $$props.filledNodeSRC);
@@ -4593,7 +4660,7 @@ var app = (function () {
     	}
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty[0] & /*negativeEngraving, $CombatEngravingStore, $SelectedClass, $ClassEngravingStore*/ 1835016) {
+    		if ($$self.$$.dirty[0] & /*negativeEngraving, $CombatEngravingStore, $SelectedClass, $ClassEngravingStore*/ 117440520) {
     			{
     				if (!negativeEngraving) {
     					$$invalidate(5, engravingMenuItems = $CombatEngravingStore);
@@ -4621,6 +4688,12 @@ var app = (function () {
     		emptyNodeSRC,
     		inTransition,
     		error,
+    		bookMenuItems,
+    		accessoryMenuItems,
+    		stoneMenuItems,
+    		bookMenuItemsNeg,
+    		accessoryMenuItemsNeg,
+    		stoneMenuItemsNeg,
     		engravingChange,
     		valueChange,
     		engravingDropdownBlur,
@@ -4655,7 +4728,7 @@ var app = (function () {
     			safe_not_equal,
     			{
     				engraving: 0,
-    				id: 17,
+    				id: 23,
     				addEngravingRow: 2,
     				negativeEngraving: 3,
     				engravingNodes: 1

@@ -25,8 +25,15 @@
     };
 
     let engravingImgURL = '';
-    export let engravingNodes = ['-', '-', '-', '-', '-', '-', '-'];
     let engravingNodesValue = 0;
+    export let engravingNodes = ['-', '-', '-', '-', '-', '-', '-'];
+    let bookMenuItems = ['-', '+3', '+6', '+9', '+12', '+18'];
+    let accessoryMenuItems = ['-', '+1', '+2', '+3', '+4', '+5', '+6'];
+    let stoneMenuItems = ['-', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9', '+10'];
+    let bookMenuItemsNeg = ['-'];
+    let accessoryMenuItemsNeg = ['-', '+1', '+2', '+3'];
+    let stoneMenuItemsNeg = ['-', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9', '+10'];
+
 
     let nodeSrcURLs = [
         "../public/images/nodes/node_active.svg",
@@ -220,37 +227,37 @@
     </td>
     <td class="equipment-bonuses book">
         <div class="equipment-bonus-dropdown">
-            <SelectDropdown menuItems={['-', '+3', '+6', '+9', '+12', '+18']} bind:value={engravingNodes[0]} width="50px" fontSize="12px" on:valueChange={valueChange} id=0 firstValueNull=true disabled={addEngravingRow}/>
+            <SelectDropdown menuItems={negativeEngraving ? bookMenuItemsNeg : bookMenuItems} bind:value={engravingNodes[0]} width="50px" fontSize="12px" on:valueChange={valueChange} id=0 firstValueNull=true disabled={addEngravingRow || negativeEngraving}/>
         </div>
     </td>
     <td class="equipment-bonuses necklace">
         <div class="equipment-bonus-dropdown">
-            <SelectDropdown menuItems={['-', '+1', '+2', '+3', '+4', '+5', '+6']} bind:value={engravingNodes[1]} width="50px" fontSize="12px" on:valueChange={valueChange} id=1 firstValueNull=true disabled={addEngravingRow}/>
+            <SelectDropdown menuItems={negativeEngraving ? accessoryMenuItemsNeg : accessoryMenuItems} bind:value={engravingNodes[1]} width="50px" fontSize="12px" on:valueChange={valueChange} id=1 firstValueNull=true disabled={addEngravingRow}/>
         </div>
     </td>
     <td class="equipment-bonuses earring">
         <div class="equipment-bonus-dropdown">
-            <SelectDropdown menuItems={['-', '+1', '+2', '+3', '+4', '+5', '+6']} bind:value={engravingNodes[2]} width="50px" fontSize="12px" on:valueChange={valueChange} id=2 firstValueNull=true disabled={addEngravingRow}/>
+            <SelectDropdown menuItems={negativeEngraving ? accessoryMenuItemsNeg : accessoryMenuItems} bind:value={engravingNodes[2]} width="50px" fontSize="12px" on:valueChange={valueChange} id=2 firstValueNull=true disabled={addEngravingRow}/>
         </div>
     </td>
     <td class="equipment-bonuses earring">
         <div class="equipment-bonus-dropdown">
-            <SelectDropdown menuItems={['-', '+1', '+2', '+3', '+4', '+5', '+6']} bind:value={engravingNodes[3]} width="50px" fontSize="12px" on:valueChange={valueChange} id=3 firstValueNull=true disabled={addEngravingRow}/>
+            <SelectDropdown menuItems={negativeEngraving ? accessoryMenuItemsNeg : accessoryMenuItems} bind:value={engravingNodes[3]} width="50px" fontSize="12px" on:valueChange={valueChange} id=3 firstValueNull=true disabled={addEngravingRow}/>
         </div>
     </td>
     <td class="equipment-bonuses ring">
         <div class="equipment-bonus-dropdown">
-            <SelectDropdown menuItems={['-', '+1', '+2', '+3', '+4', '+5', '+6']} bind:value={engravingNodes[4]} width="50px" fontSize="12px" on:valueChange={valueChange} id=4 firstValueNull=true disabled={addEngravingRow}/>
+            <SelectDropdown menuItems={negativeEngraving ? accessoryMenuItemsNeg : accessoryMenuItems} bind:value={engravingNodes[4]} width="50px" fontSize="12px" on:valueChange={valueChange} id=4 firstValueNull=true disabled={addEngravingRow}/>
         </div>
     </td>
     <td class="equipment-bonuses ring">
         <div class="equipment-bonus-dropdown">
-            <SelectDropdown menuItems={['-', '+1', '+2', '+3', '+4', '+5', '+6']} bind:value={engravingNodes[5]} width="50px" fontSize="12px" on:valueChange={valueChange} id=5 firstValueNull=true disabled={addEngravingRow}/>
+            <SelectDropdown menuItems={negativeEngraving ? accessoryMenuItemsNeg : accessoryMenuItems} bind:value={engravingNodes[5]} width="50px" fontSize="12px" on:valueChange={valueChange} id=5 firstValueNull=true disabled={addEngravingRow}/>
         </div>
     </td>
     <td class="equipment-bonuses stone">
         <div class="equipment-bonus-dropdown">
-            <SelectDropdown menuItems={['-', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9', '+10']} bind:value={engravingNodes[6]} width="50px" fontSize="12px" on:valueChange={valueChange} id=6 firstValueNull=true disabled={addEngravingRow}/>
+            <SelectDropdown menuItems={negativeEngraving ? stoneMenuItemsNeg : stoneMenuItems} bind:value={engravingNodes[6]} width="50px" fontSize="12px" on:valueChange={valueChange} id=6 firstValueNull=true disabled={addEngravingRow}/>
         </div>
     </td>
 </tr>
