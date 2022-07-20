@@ -11,7 +11,7 @@
     const classChange = (e) => {
         advClass = e.detail;
         classIconURL = advClass.toLowerCase().replace(" ", "");
-        classIconURL = "../../images/class_icons/png/" + classIconURL + ".png";
+        classIconURL = "../public/images/class_icons/png/" + classIconURL + ".png";
     };
 </script>
 <div class="class-container">

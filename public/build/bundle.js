@@ -2711,7 +2711,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*emptyNodeSRC*/ ctx[10])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 181, 16, 7123);
+    			add_location(img, file$2, 181, 16, 7151);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2799,7 +2799,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*filledNodeSRC*/ ctx[9])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 178, 20, 7002);
+    			add_location(img, file$2, 178, 20, 7030);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2836,7 +2836,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*activeNodeSRC*/ ctx[8])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 176, 20, 6896);
+    			add_location(img, file$2, 176, 20, 6924);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2924,7 +2924,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*emptyNodeSRC*/ ctx[10])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 194, 16, 7660);
+    			add_location(img, file$2, 194, 16, 7688);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3012,7 +3012,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*filledNodeSRC*/ ctx[9])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 191, 20, 7539);
+    			add_location(img, file$2, 191, 20, 7567);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3049,7 +3049,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*activeNodeSRC*/ ctx[8])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 189, 20, 7433);
+    			add_location(img, file$2, 189, 20, 7461);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3137,7 +3137,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*emptyNodeSRC*/ ctx[10])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 207, 16, 8198);
+    			add_location(img, file$2, 207, 16, 8226);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3225,7 +3225,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*filledNodeSRC*/ ctx[9])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 204, 20, 8077);
+    			add_location(img, file$2, 204, 20, 8105);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3262,7 +3262,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*activeNodeSRC*/ ctx[8])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Engraving Node");
     			attr_dev(img, "class", "node svelte-inzqfp");
-    			add_location(img, file$2, 202, 20, 7971);
+    			add_location(img, file$2, 202, 20, 7999);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -3424,23 +3424,23 @@ var app = (function () {
     			path2 = svg_element("path");
     			attr_dev(path0, "d", "M0 0h24v24H0z");
     			attr_dev(path0, "fill", "none");
-    			add_location(path0, file$2, 258, 143, 11304);
+    			add_location(path0, file$2, 258, 143, 11332);
     			attr_dev(path1, "d", "M0 0h24v24H0V0z");
     			attr_dev(path1, "fill", "none");
-    			add_location(path1, file$2, 258, 186, 11347);
+    			add_location(path1, file$2, 258, 186, 11375);
     			attr_dev(path2, "d", "M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm2.46-7.12l1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12zM15.5 4l-1-1h-5l-1 1H5v2h14V4z");
-    			add_location(path2, file$2, 258, 231, 11392);
+    			add_location(path2, file$2, 258, 231, 11420);
     			attr_dev(svg, "width", "24");
     			attr_dev(svg, "height", "24");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 24 24");
     			attr_dev(svg, "color", "#000");
     			attr_dev(svg, "class", "delete svelte-inzqfp");
-    			add_location(svg, file$2, 258, 8, 11169);
+    			add_location(svg, file$2, 258, 8, 11197);
     			set_style(div, "position", "relative");
     			set_style(div, "width", "0");
     			set_style(div, "height", "0");
-    			add_location(div, file$2, 257, 4, 11060);
+    			add_location(div, file$2, 257, 4, 11088);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3852,54 +3852,54 @@ var app = (function () {
     			attr_dev(img, "alt", /*engraving*/ ctx[0]);
     			attr_dev(img, "class", "engraving-img svelte-inzqfp");
     			toggle_class(img, "inactive-engraving", /*engravingNodesValue*/ ctx[7] < 5);
-    			add_location(img, file$2, 169, 8, 6282);
+    			add_location(img, file$2, 169, 8, 6310);
     			attr_dev(div0, "class", "engraving-dropdown svelte-inzqfp");
-    			add_location(div0, file$2, 170, 8, 6410);
+    			add_location(div0, file$2, 170, 8, 6438);
     			attr_dev(td0, "class", "engraving-selection svelte-inzqfp");
-    			add_location(td0, file$2, 168, 4, 6240);
+    			add_location(td0, file$2, 168, 4, 6268);
     			attr_dev(td1, "class", "engraving-nodes nodes-level1 svelte-inzqfp");
-    			add_location(td1, file$2, 172, 4, 6702);
+    			add_location(td1, file$2, 172, 4, 6730);
     			attr_dev(td2, "class", "engraving-nodes nodes-level2 svelte-inzqfp");
-    			add_location(td2, file$2, 185, 4, 7234);
+    			add_location(td2, file$2, 185, 4, 7262);
     			attr_dev(td3, "class", "engraving-nodes nodes-level3 svelte-inzqfp");
-    			add_location(td3, file$2, 198, 4, 7771);
+    			add_location(td3, file$2, 198, 4, 7799);
     			attr_dev(h4, "class", "svelte-inzqfp");
     			toggle_class(h4, "extra-nodes", /*engravingNodesValue*/ ctx[7] > 15);
-    			add_location(h4, file$2, 212, 8, 8353);
+    			add_location(h4, file$2, 212, 8, 8381);
     			attr_dev(td4, "class", "engraving-nodes-extra svelte-inzqfp");
-    			add_location(td4, file$2, 211, 4, 8309);
+    			add_location(td4, file$2, 211, 4, 8337);
     			attr_dev(div1, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div1, file$2, 221, 8, 8627);
+    			add_location(div1, file$2, 221, 8, 8655);
     			attr_dev(td5, "class", "equipment-bonuses book svelte-inzqfp");
-    			add_location(td5, file$2, 220, 4, 8582);
+    			add_location(td5, file$2, 220, 4, 8610);
     			attr_dev(div2, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div2, file$2, 226, 8, 8969);
+    			add_location(div2, file$2, 226, 8, 8997);
     			attr_dev(td6, "class", "equipment-bonuses necklace svelte-inzqfp");
-    			add_location(td6, file$2, 225, 4, 8920);
+    			add_location(td6, file$2, 225, 4, 8948);
     			attr_dev(div3, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div3, file$2, 231, 8, 9314);
+    			add_location(div3, file$2, 231, 8, 9342);
     			attr_dev(td7, "class", "equipment-bonuses earring svelte-inzqfp");
-    			add_location(td7, file$2, 230, 4, 9266);
+    			add_location(td7, file$2, 230, 4, 9294);
     			attr_dev(div4, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div4, file$2, 236, 8, 9659);
+    			add_location(div4, file$2, 236, 8, 9687);
     			attr_dev(td8, "class", "equipment-bonuses earring svelte-inzqfp");
-    			add_location(td8, file$2, 235, 4, 9611);
+    			add_location(td8, file$2, 235, 4, 9639);
     			attr_dev(div5, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div5, file$2, 241, 8, 10001);
+    			add_location(div5, file$2, 241, 8, 10029);
     			attr_dev(td9, "class", "equipment-bonuses ring svelte-inzqfp");
-    			add_location(td9, file$2, 240, 4, 9956);
+    			add_location(td9, file$2, 240, 4, 9984);
     			attr_dev(div6, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div6, file$2, 246, 8, 10343);
+    			add_location(div6, file$2, 246, 8, 10371);
     			attr_dev(td10, "class", "equipment-bonuses ring svelte-inzqfp");
-    			add_location(td10, file$2, 245, 4, 10298);
+    			add_location(td10, file$2, 245, 4, 10326);
     			attr_dev(div7, "class", "equipment-bonus-dropdown svelte-inzqfp");
-    			add_location(div7, file$2, 251, 8, 10686);
+    			add_location(div7, file$2, 251, 8, 10714);
     			attr_dev(td11, "class", "equipment-bonuses stone svelte-inzqfp");
-    			add_location(td11, file$2, 250, 4, 10640);
+    			add_location(td11, file$2, 250, 4, 10668);
     			attr_dev(tr, "class", "row-container svelte-inzqfp");
     			toggle_class(tr, "in-transition", /*inTransition*/ ctx[11]);
     			toggle_class(tr, "error", /*error*/ ctx[12]);
-    			add_location(tr, file$2, 167, 0, 5942);
+    			add_location(tr, file$2, 167, 0, 5970);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4297,12 +4297,12 @@ var app = (function () {
     	let engravingNodesValue = 0;
 
     	let nodeSrcURLs = [
-    		"../../images/nodes/node_active.svg",
-    		"../../images/nodes/node_active_filled.svg",
-    		"../../images/nodes/node_active_empty.svg",
-    		"../../images/nodes/node_active_neg.svg",
-    		"../../images/nodes/node_inactive_filled.svg",
-    		"../../images/nodes/node_inactive_empty.svg"
+    		"../public/images/nodes/node_active.svg",
+    		"../public/images/nodes/node_active_filled.svg",
+    		"../public/images/nodes/node_active_empty.svg",
+    		"../public/images/nodes/node_active_neg.svg",
+    		"../public/images/nodes/node_inactive_filled.svg",
+    		"../public/images/nodes/node_inactive_empty.svg"
     	];
 
     	let activeNodeSRC = nodeSrcURLs[0];
@@ -4399,7 +4399,7 @@ var app = (function () {
     	const getEngravingURL = name => {
     		let regex = /[^a-zA-Z]/g;
     		name = name.replaceAll(regex, '').toLowerCase();
-    		return "../../images/engravings/" + name + ".png";
+    		return "../public/images/engravings/" + name + ".png";
     	};
 
     	const valueChange = e => {
@@ -4739,7 +4739,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*classIconURL*/ ctx[1])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Class Icon");
     			attr_dev(img, "class", "class-icon svelte-1799ozp");
-    			add_location(img, file$1, 19, 8, 720);
+    			add_location(img, file$1, 19, 8, 724);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -5146,141 +5146,141 @@ var app = (function () {
     			}
 
     			attr_dev(div0, "class", "class-icon-container svelte-1799ozp");
-    			add_location(div0, file$1, 17, 4, 650);
+    			add_location(div0, file$1, 17, 4, 654);
     			attr_dev(div1, "class", "class-dropdown-container svelte-1799ozp");
-    			add_location(div1, file$1, 22, 4, 809);
+    			add_location(div1, file$1, 22, 4, 813);
     			attr_dev(div2, "class", "class-container svelte-1799ozp");
-    			add_location(div2, file$1, 16, 0, 615);
+    			add_location(div2, file$1, 16, 0, 619);
     			attr_dev(h30, "class", "combat-engravings-h3 svelte-1799ozp");
-    			add_location(h30, file$1, 28, 54, 997);
+    			add_location(h30, file$1, 28, 54, 1001);
     			attr_dev(th0, "class", "engraving-selection-head top-head svelte-1799ozp");
-    			add_location(th0, file$1, 28, 8, 951);
+    			add_location(th0, file$1, 28, 8, 955);
     			attr_dev(h31, "class", "svelte-1799ozp");
-    			add_location(h31, file$1, 29, 50, 1109);
+    			add_location(h31, file$1, 29, 50, 1113);
     			attr_dev(th1, "class", "engraving-nodes-head top-head svelte-1799ozp");
-    			add_location(th1, file$1, 29, 8, 1067);
+    			add_location(th1, file$1, 29, 8, 1071);
     			attr_dev(h32, "class", "svelte-1799ozp");
-    			add_location(h32, file$1, 30, 50, 1179);
+    			add_location(h32, file$1, 30, 50, 1183);
     			attr_dev(th2, "class", "engraving-nodes-head top-head svelte-1799ozp");
-    			add_location(th2, file$1, 30, 8, 1137);
+    			add_location(th2, file$1, 30, 8, 1141);
     			attr_dev(h33, "class", "svelte-1799ozp");
-    			add_location(h33, file$1, 31, 50, 1249);
+    			add_location(h33, file$1, 31, 50, 1253);
     			attr_dev(th3, "class", "engraving-nodes-head top-head svelte-1799ozp");
-    			add_location(th3, file$1, 31, 8, 1207);
+    			add_location(th3, file$1, 31, 8, 1211);
     			attr_dev(h34, "class", "svelte-1799ozp");
-    			add_location(h34, file$1, 32, 56, 1325);
+    			add_location(h34, file$1, 32, 56, 1329);
     			attr_dev(th4, "class", "engraving-nodes-extra-head top-head svelte-1799ozp");
-    			add_location(th4, file$1, 32, 8, 1277);
+    			add_location(th4, file$1, 32, 8, 1281);
     			if (!src_url_equal(img0.src, img0_src_value = "../../images/rarity_bgs/leg_bg.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Legendary Item Background");
     			attr_dev(img0, "class", "rarity-img svelte-1799ozp");
-    			add_location(img0, file$1, 34, 12, 1402);
+    			add_location(img0, file$1, 34, 12, 1406);
     			if (!src_url_equal(img1.src, img1_src_value = "../../images/equipment/leg_engravingbook.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Engraving Books");
     			attr_dev(img1, "class", "equipment-img svelte-1799ozp");
-    			add_location(img1, file$1, 35, 12, 1513);
+    			add_location(img1, file$1, 35, 12, 1517);
     			attr_dev(th5, "class", "equipment-header top-head svelte-1799ozp");
-    			add_location(th5, file$1, 33, 8, 1350);
+    			add_location(th5, file$1, 33, 8, 1354);
     			if (!src_url_equal(img2.src, img2_src_value = "../../images/rarity_bgs/relic_bg.png")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Relic Item Background");
     			attr_dev(img2, "class", "rarity-img svelte-1799ozp");
-    			add_location(img2, file$1, 38, 12, 1690);
+    			add_location(img2, file$1, 38, 12, 1694);
     			if (!src_url_equal(img3.src, img3_src_value = "../../images/equipment/relic_necklace.png")) attr_dev(img3, "src", img3_src_value);
     			attr_dev(img3, "alt", "Necklace");
     			attr_dev(img3, "class", "equipment-img svelte-1799ozp");
-    			add_location(img3, file$1, 39, 12, 1799);
+    			add_location(img3, file$1, 39, 12, 1803);
     			attr_dev(th6, "class", "equipment-header top-head svelte-1799ozp");
-    			add_location(th6, file$1, 37, 8, 1638);
+    			add_location(th6, file$1, 37, 8, 1642);
     			if (!src_url_equal(img4.src, img4_src_value = "../../images/rarity_bgs/relic_bg.png")) attr_dev(img4, "src", img4_src_value);
     			attr_dev(img4, "alt", "Relic Item Background");
     			attr_dev(img4, "class", "rarity-img svelte-1799ozp");
-    			add_location(img4, file$1, 42, 12, 1966);
+    			add_location(img4, file$1, 42, 12, 1970);
     			if (!src_url_equal(img5.src, img5_src_value = "../../images/equipment/relic_earring.png")) attr_dev(img5, "src", img5_src_value);
     			attr_dev(img5, "alt", "Earring1");
     			attr_dev(img5, "class", "equipment-img svelte-1799ozp");
-    			add_location(img5, file$1, 43, 12, 2075);
+    			add_location(img5, file$1, 43, 12, 2079);
     			attr_dev(th7, "class", "equipment-header top-head svelte-1799ozp");
-    			add_location(th7, file$1, 41, 8, 1914);
+    			add_location(th7, file$1, 41, 8, 1918);
     			if (!src_url_equal(img6.src, img6_src_value = "../../images/rarity_bgs/relic_bg.png")) attr_dev(img6, "src", img6_src_value);
     			attr_dev(img6, "alt", "Relic Item Background");
     			attr_dev(img6, "class", "rarity-img svelte-1799ozp");
-    			add_location(img6, file$1, 46, 12, 2241);
+    			add_location(img6, file$1, 46, 12, 2245);
     			if (!src_url_equal(img7.src, img7_src_value = "../../images/equipment/relic_earring.png")) attr_dev(img7, "src", img7_src_value);
     			attr_dev(img7, "alt", "Earring2");
     			attr_dev(img7, "class", "equipment-img svelte-1799ozp");
-    			add_location(img7, file$1, 47, 12, 2350);
+    			add_location(img7, file$1, 47, 12, 2354);
     			attr_dev(th8, "class", "equipment-header top-head svelte-1799ozp");
-    			add_location(th8, file$1, 45, 8, 2189);
+    			add_location(th8, file$1, 45, 8, 2193);
     			if (!src_url_equal(img8.src, img8_src_value = "../../images/rarity_bgs/relic_bg.png")) attr_dev(img8, "src", img8_src_value);
     			attr_dev(img8, "alt", "Relic Item Background");
     			attr_dev(img8, "class", "rarity-img svelte-1799ozp");
-    			add_location(img8, file$1, 50, 12, 2516);
+    			add_location(img8, file$1, 50, 12, 2520);
     			if (!src_url_equal(img9.src, img9_src_value = "../../images/equipment/relic_ring.png")) attr_dev(img9, "src", img9_src_value);
     			attr_dev(img9, "alt", "Ring1");
     			attr_dev(img9, "class", "equipment-img svelte-1799ozp");
-    			add_location(img9, file$1, 51, 12, 2625);
+    			add_location(img9, file$1, 51, 12, 2629);
     			attr_dev(th9, "class", "equipment-header top-head svelte-1799ozp");
-    			add_location(th9, file$1, 49, 8, 2464);
+    			add_location(th9, file$1, 49, 8, 2468);
     			if (!src_url_equal(img10.src, img10_src_value = "../../images/rarity_bgs/relic_bg.png")) attr_dev(img10, "src", img10_src_value);
     			attr_dev(img10, "alt", "Relic Item Background");
     			attr_dev(img10, "class", "rarity-img svelte-1799ozp");
-    			add_location(img10, file$1, 54, 12, 2785);
+    			add_location(img10, file$1, 54, 12, 2789);
     			if (!src_url_equal(img11.src, img11_src_value = "../../images/equipment/relic_ring.png")) attr_dev(img11, "src", img11_src_value);
     			attr_dev(img11, "alt", "Ring2");
     			attr_dev(img11, "class", "equipment-img svelte-1799ozp");
-    			add_location(img11, file$1, 55, 12, 2894);
+    			add_location(img11, file$1, 55, 12, 2898);
     			attr_dev(th10, "class", "equipment-header top-head svelte-1799ozp");
-    			add_location(th10, file$1, 53, 8, 2733);
+    			add_location(th10, file$1, 53, 8, 2737);
     			if (!src_url_equal(img12.src, img12_src_value = "../../images/rarity_bgs/relic_bg.png")) attr_dev(img12, "src", img12_src_value);
     			attr_dev(img12, "alt", "Relic Item Background");
     			attr_dev(img12, "class", "rarity-img svelte-1799ozp");
-    			add_location(img12, file$1, 58, 12, 3054);
+    			add_location(img12, file$1, 58, 12, 3058);
     			if (!src_url_equal(img13.src, img13_src_value = "../../images/equipment/relic_stone.png")) attr_dev(img13, "src", img13_src_value);
     			attr_dev(img13, "alt", "Ability Stone");
     			attr_dev(img13, "class", "equipment-img svelte-1799ozp");
-    			add_location(img13, file$1, 59, 12, 3163);
+    			add_location(img13, file$1, 59, 12, 3167);
     			attr_dev(th11, "class", "equipment-header top-head svelte-1799ozp");
-    			add_location(th11, file$1, 57, 8, 3002);
+    			add_location(th11, file$1, 57, 8, 3006);
     			attr_dev(tr0, "class", "svelte-1799ozp");
-    			add_location(tr0, file$1, 27, 4, 937);
+    			add_location(tr0, file$1, 27, 4, 941);
     			attr_dev(h35, "class", "combat-engravings-h3 svelte-1799ozp");
-    			add_location(h35, file$1, 67, 45, 3579);
+    			add_location(h35, file$1, 67, 45, 3583);
     			attr_dev(th12, "class", "engraving-selection-head svelte-1799ozp");
-    			add_location(th12, file$1, 67, 8, 3542);
+    			add_location(th12, file$1, 67, 8, 3546);
     			attr_dev(h36, "class", "svelte-1799ozp");
-    			add_location(h36, file$1, 68, 41, 3684);
+    			add_location(h36, file$1, 68, 41, 3688);
     			attr_dev(th13, "class", "engraving-nodes-head svelte-1799ozp");
-    			add_location(th13, file$1, 68, 8, 3651);
+    			add_location(th13, file$1, 68, 8, 3655);
     			attr_dev(h37, "class", "svelte-1799ozp");
-    			add_location(h37, file$1, 69, 41, 3745);
+    			add_location(h37, file$1, 69, 41, 3749);
     			attr_dev(th14, "class", "engraving-nodes-head svelte-1799ozp");
-    			add_location(th14, file$1, 69, 8, 3712);
+    			add_location(th14, file$1, 69, 8, 3716);
     			attr_dev(h38, "class", "svelte-1799ozp");
-    			add_location(h38, file$1, 70, 41, 3806);
+    			add_location(h38, file$1, 70, 41, 3810);
     			attr_dev(th15, "class", "engraving-nodes-head svelte-1799ozp");
-    			add_location(th15, file$1, 70, 8, 3773);
+    			add_location(th15, file$1, 70, 8, 3777);
     			attr_dev(h39, "class", "svelte-1799ozp");
-    			add_location(h39, file$1, 71, 47, 3873);
+    			add_location(h39, file$1, 71, 47, 3877);
     			attr_dev(th16, "class", "engraving-nodes-extra-head svelte-1799ozp");
-    			add_location(th16, file$1, 71, 8, 3834);
+    			add_location(th16, file$1, 71, 8, 3838);
     			attr_dev(th17, "class", "equipment-header svelte-1799ozp");
-    			add_location(th17, file$1, 72, 8, 3898);
+    			add_location(th17, file$1, 72, 8, 3902);
     			attr_dev(th18, "class", "equipment-header svelte-1799ozp");
-    			add_location(th18, file$1, 73, 8, 3942);
+    			add_location(th18, file$1, 73, 8, 3946);
     			attr_dev(th19, "class", "equipment-header svelte-1799ozp");
-    			add_location(th19, file$1, 74, 8, 3986);
+    			add_location(th19, file$1, 74, 8, 3990);
     			attr_dev(th20, "class", "equipment-header svelte-1799ozp");
-    			add_location(th20, file$1, 75, 8, 4030);
+    			add_location(th20, file$1, 75, 8, 4034);
     			attr_dev(th21, "class", "equipment-header svelte-1799ozp");
-    			add_location(th21, file$1, 76, 8, 4074);
+    			add_location(th21, file$1, 76, 8, 4078);
     			attr_dev(th22, "class", "equipment-header svelte-1799ozp");
-    			add_location(th22, file$1, 77, 8, 4118);
+    			add_location(th22, file$1, 77, 8, 4122);
     			attr_dev(th23, "class", "equipment-header svelte-1799ozp");
-    			add_location(th23, file$1, 78, 8, 4162);
+    			add_location(th23, file$1, 78, 8, 4166);
     			attr_dev(tr1, "class", "svelte-1799ozp");
-    			add_location(tr1, file$1, 66, 4, 3528);
+    			add_location(tr1, file$1, 66, 4, 3532);
     			attr_dev(table, "class", "svelte-1799ozp");
-    			add_location(table, file$1, 26, 0, 924);
+    			add_location(table, file$1, 26, 0, 928);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5498,7 +5498,7 @@ var app = (function () {
     	const classChange = e => {
     		$$invalidate(0, advClass = e.detail);
     		$$invalidate(1, classIconURL = advClass.toLowerCase().replace(" ", ""));
-    		$$invalidate(1, classIconURL = "../../images/class_icons/png/" + classIconURL + ".png");
+    		$$invalidate(1, classIconURL = "../public/images/class_icons/png/" + classIconURL + ".png");
     	};
 
     	const writable_props = [];
