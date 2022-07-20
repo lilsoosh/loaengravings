@@ -4,10 +4,10 @@ publish(
  'build', // path to public directory
  {
   branch: 'gh-pages',
-  repo: 'https://github.com/lilsoosh/loaengravings.git', // Update to point to your repository
+  repo: 'https://github.com/lilsoosh/loaengravings.git',
   user: {
-   name: 'lilsoosh', // update to use your name
-   email: 'andrewianwoo@yahoo.com' // Update to use your email
+   name: 'lilsoosh',
+   email: 'andrewianwoo@yahoo.com'
   },
   dotfiles: true
   },
