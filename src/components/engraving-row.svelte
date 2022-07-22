@@ -17,7 +17,7 @@
     let engravingMenuItems = [];
     $: {if (!negativeEngraving){
             engravingMenuItems = $CombatEngravingStore;
-            if ($SelectedClass != ''){
+            if ($SelectedClass != 'Choose Class'){
                 let classEngravings = $ClassEngravingStore.find((advClass) => advClass.name === $SelectedClass).engravings;
                 engravingMenuItems = [...classEngravings, ...$CombatEngravingStore]
             }
@@ -123,17 +123,14 @@
     const valueChange = (e) => {
         let nodeId = e.detail.id;
         let newValue = e.detail.item;
-        let updatedEngraving;
-        if (negativeEngraving){
-            updatedEngraving = $NegativeEngravings.find((engraving) => engraving.id === id);
-            console.log($NegativeEngravings);
-        } else {
-            updatedEngraving = $SelectedEngravings.find((engraving) => engraving.id === id);
-            console.log($SelectedEngravings);
-        }
-        let copiedEngravingNodes = updatedEngraving.nodes;
-        copiedEngravingNodes[nodeId] = newValue;
 
+        if (negativeEngraving){
+            $NegativeEngravings.find((engraving) => engraving.id === id).nodes[nodeId] = newValue;
+            $NegativeEngravings = $NegativeEngravings;
+        } else {
+            $SelectedEngravings.find((engraving) => engraving.id === id).nodes[nodeId] = newValue;
+            $SelectedEngravings = $SelectedEngravings;
+        }
         updateNodes();
     };
 

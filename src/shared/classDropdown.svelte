@@ -6,7 +6,7 @@
 
     const dispatch = createEventDispatcher();
 
-    let value = "Choose Class";
+    export let value = '';
 
     let isFocused = false;
 
@@ -71,7 +71,7 @@
         cursor: pointer;
     }
 
-    button:focus{
+    button:focus, button:hover{
         background-color: #333333;
         border-color: #CCCCCC;
         box-shadow: 1px 1px 4px rgba(0,0,0,0.3);

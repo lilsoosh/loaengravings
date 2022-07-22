@@ -1,30 +1,33 @@
 <script>
+    import { onMount } from 'svelte';
     import ClassDropdown from '../shared/classDropdown.svelte';
     import EngravingRow from './engraving-row.svelte';
+    import ClearData from '../shared/clearData.svelte';
     import { SelectedClass } from '../stores/engravingStore';
     import { SelectedEngravings } from '../stores/engravingStore';
     import { NegativeEngravings } from '../stores/engravingStore';
 
-    let advClass = "";
-    let classIconURL = "";
 
-    const classChange = (e) => {
-        advClass = e.detail;
-        classIconURL = advClass.toLowerCase().replace(" ", "");
+    onMount(() => {
+        changeClassIcon();
+    });
+
+    let classIconURL = "";
+    const changeClassIcon = () => {
+        classIconURL = $SelectedClass.toLowerCase().replace(" ", "");
         classIconURL = './images/class_icons/png/' + classIconURL + ".png";
     };
-
-    console.log(import.meta.url)
 </script>
 <div class="class-container">
     <div class="class-icon-container">
-    {#if advClass != ""}
+    {#if $SelectedClass != "Choose Class"}
         <img src={classIconURL} alt="Class Icon" class="class-icon">
     {/if}
     </div>
     <div class="class-dropdown-container">
-        <ClassDropdown on:valueChange={classChange}/>
+        <ClassDropdown value={$SelectedClass} on:valueChange={changeClassIcon}/>
     </div>
+    <div class="clear-data-button"><ClearData/></div>
 </div>
 <table>
     <tr>
@@ -90,6 +93,7 @@
     .class-container{
         position: relative;
         text-align: left;
+        height: 50px;
     }
 
     .class-dropdown-container{
@@ -104,13 +108,22 @@
         margin: auto;
     }
 
-    .class-icon-container {
+    .class-icon-container{
         display: inline-flex;
         width: 40px;
         height: 40px;
         text-align: center;
         vertical-align: middle;
+        margin: 5px 0px;
         margin-left: 5%;
+    }
+
+    .clear-data-button{
+        display: inline-flex;
+        float: right;
+        margin: 10px 0px;
+        margin-right: 5%;
+        vertical-align: middle;
     }
 
     table{

@@ -9,7 +9,6 @@
     //#839338;
 
     //TODO
-    //clear/reset, local storage
     //import/export, saved settings, help & info modal, light/dark mode
 
 

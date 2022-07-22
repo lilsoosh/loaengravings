@@ -1,17 +1,30 @@
 import { readable } from 'svelte/store';
 import { writable } from 'svelte/store';
 
-export const SelectedClass = writable('');
+const retrievedSelectedClass = window.localStorage.getItem("advclass");
+export const SelectedClass = writable(retrievedSelectedClass === null ? 'Choose Class' : retrievedSelectedClass);
+SelectedClass.subscribe(value => {
+        window.localStorage.setItem("advclass", value);
+});
 
-export const SelectedEngravings = writable([]);
-///{id:1337, engraving:'Igniter', nodes: ['-','+5','-','-','-','-','-']}
+console.log(JSON.parse(window.localStorage.getItem("engravings")));
+const retrievedSelectedEngravings = JSON.parse(window.localStorage.getItem("engravings"));
+export const SelectedEngravings = writable(retrievedSelectedEngravings === null ? [] : retrievedSelectedEngravings);
+SelectedEngravings.subscribe(value => {
+        window.localStorage.setItem("engravings", JSON.stringify(value));
+});
 
-export const NegativeEngravings = writable([
+const defaultNegEngravings = [
         {id:-1, engraving:'Atk. Power Reduction', nodes:['-','-','-','-','-','-','-']},
         {id:-2, engraving:'Atk. Speed Reduction', nodes:['-','-','-','-','-','-','-']},
         {id:-3, engraving:'Defense Reduction', nodes:['-','-','-','-','-','-','-']},
         {id:-4, engraving:'Move Speed Reduction', nodes:['-','-','-','-','-','-','-']}
-]);
+]
+const retrievedNegativeEngravings = JSON.parse(window.localStorage.getItem("negatives"));
+export const NegativeEngravings = writable(retrievedNegativeEngravings === null ? defaultNegEngravings : retrievedNegativeEngravings);
+NegativeEngravings.subscribe(value => {
+        window.localStorage.setItem("negatives", JSON.stringify(value));
+});
 
 export const SurClassStore = readable(['Warrior', 'Martial Artist', 'Gunner', 'Mage', 'Assassin']);
 
