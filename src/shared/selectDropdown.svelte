@@ -78,6 +78,10 @@
         color: #CCCCCC;
     }
 
+    button:not(.null-value){
+        background-color: #333333;
+    }
+
     button:focus, button:hover:enabled{
         background-color: #333333;
         border-color: #CCCCCC;

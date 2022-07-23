@@ -7,7 +7,6 @@ SelectedClass.subscribe(value => {
         window.localStorage.setItem("advclass", value);
 });
 
-console.log(JSON.parse(window.localStorage.getItem("engravings")));
 const retrievedSelectedEngravings = JSON.parse(window.localStorage.getItem("engravings"));
 export const SelectedEngravings = writable(retrievedSelectedEngravings === null ? [] : retrievedSelectedEngravings);
 SelectedEngravings.subscribe(value => {

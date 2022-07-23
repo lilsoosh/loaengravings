@@ -1162,7 +1162,6 @@ var app = (function () {
             window.localStorage.setItem("advclass", value);
     });
 
-    console.log(JSON.parse(window.localStorage.getItem("engravings")));
     const retrievedSelectedEngravings = JSON.parse(window.localStorage.getItem("engravings"));
     const SelectedEngravings = writable(retrievedSelectedEngravings === null ? [] : retrievedSelectedEngravings);
     SelectedEngravings.subscribe(value => {
@@ -2263,7 +2262,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text(t_value);
-    			attr_dev(div, "class", "dropdown-item svelte-ecpgc9");
+    			attr_dev(div, "class", "dropdown-item svelte-1h1o2da");
     			set_style(div, "font-size", /*fontSize*/ ctx[3]);
     			add_location(div, file$4, 36, 12, 1203);
     		},
@@ -2347,27 +2346,27 @@ var app = (function () {
     			attr_dev(button, "type", "button");
     			set_style(button, "width", /*width*/ ctx[2]);
     			set_style(button, "font-size", /*fontSize*/ ctx[3]);
-    			attr_dev(button, "class", "dropdown-button svelte-ecpgc9");
+    			attr_dev(button, "class", "dropdown-button svelte-1h1o2da");
     			button.disabled = /*disabled*/ ctx[5];
     			toggle_class(button, "null-value", /*firstValueNull*/ ctx[6] && /*value*/ ctx[0] === /*menuItems*/ ctx[1][0]);
     			add_location(button, file$4, 30, 4, 685);
     			attr_dev(path0, "d", "M0 0h24v24H0z");
     			attr_dev(path0, "fill", "none");
-    			attr_dev(path0, "class", "svelte-ecpgc9");
+    			attr_dev(path0, "class", "svelte-1h1o2da");
     			add_location(path0, file$4, 32, 68, 1002);
     			attr_dev(path1, "d", "M7 10l5 5 5-5z");
-    			attr_dev(path1, "class", "svelte-ecpgc9");
+    			attr_dev(path1, "class", "svelte-1h1o2da");
     			add_location(path1, file$4, 32, 111, 1045);
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 24 24");
-    			attr_dev(svg, "class", "svelte-ecpgc9");
+    			attr_dev(svg, "class", "svelte-1h1o2da");
     			add_location(svg, file$4, 32, 8, 942);
-    			attr_dev(div0, "class", "dropdown-arrow svelte-ecpgc9");
+    			attr_dev(div0, "class", "dropdown-arrow svelte-1h1o2da");
     			add_location(div0, file$4, 31, 4, 904);
-    			attr_dev(div1, "class", "dropdown-content svelte-ecpgc9");
+    			attr_dev(div1, "class", "dropdown-content svelte-1h1o2da");
     			toggle_class(div1, "show", /*isFocused*/ ctx[7]);
     			add_location(div1, file$4, 34, 4, 1101);
-    			attr_dev(section, "class", "select-dropdown-container svelte-ecpgc9");
+    			attr_dev(section, "class", "select-dropdown-container svelte-1h1o2da");
     			add_location(section, file$4, 29, 0, 636);
     		},
     		l: function claim(nodes) {
