@@ -5,6 +5,7 @@
     import { NegativeEngravings } from '../stores/engravingStore';
 
     export let numberOfPresets = 6;
+    let tooltipTexts = [];
 
     const presetChange = (presetIndex) => {
         SaveCurrentPreset();
@@ -31,12 +32,33 @@
             $NegativeEngravings = JSON.parse(newPresetArray[2]);
         }, 500);
     }
+    
+    const UpdateTooltips = () => {
+        for (let i = 0; i < numberOfPresets; i++){
+            let localStorageKey = "preset" + i;
+            let presetString = window.localStorage.getItem(localStorageKey);
+            let presetClass = presetString === null ? "Choose Class" : JSON.parse(presetString.split("&")[0]);
+            if (presetClass === "Choose Class"){
+                tooltipTexts[i] = "No Class";
+            } else {
+                tooltipTexts[i] = presetClass;
+            }
+        }
+    }
+
+    $: {
+        $SelectedClass;
+        UpdateTooltips();
+    }
 </script>
 
 <ul>
     <h3>Presets:</h3>
     {#each Array(numberOfPresets) as preset, i}
-    <li><button type="button" class="preset-button" class:selected={$SelectedPreset == i} on:click={() => presetChange(i)}><p class:selected={$SelectedPreset == i}>{i + 1}</p></button></li>
+    <li><button type="button" class="preset-button" class:selected={$SelectedPreset == i} on:click={() => presetChange(i)}>
+        <p class:selected={$SelectedPreset == i}>{i + 1}</p>
+        <span class="tooltip-text">{tooltipTexts[i]}</span>
+    </button></li>
     {/each}
 </ul>
 
@@ -91,6 +113,39 @@
         color: #ad866d;
         background: #333333;
         border-color: #ad866d;
+        pointer-events: none;
         cursor: default;
+    }
+
+
+    .tooltip-text {
+        position: absolute;
+        width: 100px;
+        padding: 5px 0;
+        top: 100%;
+        margin-left: -50px;
+        border-radius: 6px;
+        background-color: #333333;
+        color: white;
+        text-align: center;
+        
+        box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        z-index: 1;
+        visibility: hidden;
+    }
+
+    button:not(.selected):hover .tooltip-text {
+        visibility: visible;
+    }
+
+    .tooltip-text::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%;  /* At the top of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #333333 transparent;
     }
 </style>

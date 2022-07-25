@@ -4784,23 +4784,28 @@ var app = (function () {
 
     function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[9] = list[i];
-    	child_ctx[11] = i;
+    	child_ctx[11] = list[i];
+    	child_ctx[13] = i;
     	return child_ctx;
     }
 
-    // (38:4) {#each Array(numberOfPresets) as preset, i}
+    // (57:4) {#each Array(numberOfPresets) as preset, i}
     function create_each_block$1(ctx) {
     	let li;
     	let button;
     	let p;
-    	let t_value = /*i*/ ctx[11] + 1 + "";
-    	let t;
+    	let t0_value = /*i*/ ctx[13] + 1 + "";
+    	let t0;
+    	let t1;
+    	let span;
+    	let t2_value = /*tooltipTexts*/ ctx[1][/*i*/ ctx[13]] + "";
+    	let t2;
+    	let t3;
     	let mounted;
     	let dispose;
 
     	function click_handler() {
-    		return /*click_handler*/ ctx[3](/*i*/ ctx[11]);
+    		return /*click_handler*/ ctx[5](/*i*/ ctx[13]);
     	}
 
     	const block = {
@@ -4808,22 +4813,32 @@ var app = (function () {
     			li = element("li");
     			button = element("button");
     			p = element("p");
-    			t = text(t_value);
-    			attr_dev(p, "class", "svelte-17glu0i");
-    			toggle_class(p, "selected", /*$SelectedPreset*/ ctx[1] == /*i*/ ctx[11]);
-    			add_location(p, file$3, 38, 123, 2040);
+    			t0 = text(t0_value);
+    			t1 = space();
+    			span = element("span");
+    			t2 = text(t2_value);
+    			t3 = space();
+    			attr_dev(p, "class", "svelte-pyul0k");
+    			toggle_class(p, "selected", /*$SelectedPreset*/ ctx[2] == /*i*/ ctx[13]);
+    			add_location(p, file$3, 58, 8, 2682);
+    			attr_dev(span, "class", "tooltip-text svelte-pyul0k");
+    			add_location(span, file$3, 59, 8, 2744);
     			attr_dev(button, "type", "button");
-    			attr_dev(button, "class", "preset-button svelte-17glu0i");
-    			toggle_class(button, "selected", /*$SelectedPreset*/ ctx[1] == /*i*/ ctx[11]);
-    			add_location(button, file$3, 38, 8, 1925);
-    			attr_dev(li, "class", "svelte-17glu0i");
-    			add_location(li, file$3, 38, 4, 1921);
+    			attr_dev(button, "class", "preset-button svelte-pyul0k");
+    			toggle_class(button, "selected", /*$SelectedPreset*/ ctx[2] == /*i*/ ctx[13]);
+    			add_location(button, file$3, 57, 8, 2557);
+    			attr_dev(li, "class", "svelte-pyul0k");
+    			add_location(li, file$3, 57, 4, 2553);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
     			append_dev(li, button);
     			append_dev(button, p);
-    			append_dev(p, t);
+    			append_dev(p, t0);
+    			append_dev(button, t1);
+    			append_dev(button, span);
+    			append_dev(span, t2);
+    			append_dev(button, t3);
 
     			if (!mounted) {
     				dispose = listen_dev(button, "click", click_handler, false, false, false);
@@ -4833,12 +4848,14 @@ var app = (function () {
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (dirty & /*$SelectedPreset*/ 2) {
-    				toggle_class(p, "selected", /*$SelectedPreset*/ ctx[1] == /*i*/ ctx[11]);
+    			if (dirty & /*$SelectedPreset*/ 4) {
+    				toggle_class(p, "selected", /*$SelectedPreset*/ ctx[2] == /*i*/ ctx[13]);
     			}
 
-    			if (dirty & /*$SelectedPreset*/ 2) {
-    				toggle_class(button, "selected", /*$SelectedPreset*/ ctx[1] == /*i*/ ctx[11]);
+    			if (dirty & /*tooltipTexts*/ 2 && t2_value !== (t2_value = /*tooltipTexts*/ ctx[1][/*i*/ ctx[13]] + "")) set_data_dev(t2, t2_value);
+
+    			if (dirty & /*$SelectedPreset*/ 4) {
+    				toggle_class(button, "selected", /*$SelectedPreset*/ ctx[2] == /*i*/ ctx[13]);
     			}
     		},
     		d: function destroy(detaching) {
@@ -4852,7 +4869,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(38:4) {#each Array(numberOfPresets) as preset, i}",
+    		source: "(57:4) {#each Array(numberOfPresets) as preset, i}",
     		ctx
     	});
 
@@ -4882,10 +4899,10 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(h3, "class", "svelte-17glu0i");
-    			add_location(h3, file$3, 36, 4, 1849);
-    			attr_dev(ul, "class", "svelte-17glu0i");
-    			add_location(ul, file$3, 35, 0, 1839);
+    			attr_dev(h3, "class", "svelte-pyul0k");
+    			add_location(h3, file$3, 55, 4, 2481);
+    			attr_dev(ul, "class", "svelte-pyul0k");
+    			add_location(ul, file$3, 54, 0, 2471);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4900,7 +4917,7 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*$SelectedPreset, presetChange, numberOfPresets*/ 7) {
+    			if (dirty & /*$SelectedPreset, presetChange, tooltipTexts, numberOfPresets*/ 15) {
     				each_value = Array(/*numberOfPresets*/ ctx[0]);
     				validate_each_argument(each_value);
     				let i;
@@ -4944,21 +4961,22 @@ var app = (function () {
     }
 
     function instance$3($$self, $$props, $$invalidate) {
+    	let $SelectedClass;
     	let $NegativeEngravings;
     	let $SelectedEngravings;
-    	let $SelectedClass;
     	let $SelectedPreset;
-    	validate_store(NegativeEngravings, 'NegativeEngravings');
-    	component_subscribe($$self, NegativeEngravings, $$value => $$invalidate(4, $NegativeEngravings = $$value));
-    	validate_store(SelectedEngravings, 'SelectedEngravings');
-    	component_subscribe($$self, SelectedEngravings, $$value => $$invalidate(5, $SelectedEngravings = $$value));
     	validate_store(SelectedClass, 'SelectedClass');
-    	component_subscribe($$self, SelectedClass, $$value => $$invalidate(6, $SelectedClass = $$value));
+    	component_subscribe($$self, SelectedClass, $$value => $$invalidate(4, $SelectedClass = $$value));
+    	validate_store(NegativeEngravings, 'NegativeEngravings');
+    	component_subscribe($$self, NegativeEngravings, $$value => $$invalidate(6, $NegativeEngravings = $$value));
+    	validate_store(SelectedEngravings, 'SelectedEngravings');
+    	component_subscribe($$self, SelectedEngravings, $$value => $$invalidate(7, $SelectedEngravings = $$value));
     	validate_store(SelectedPreset, 'SelectedPreset');
-    	component_subscribe($$self, SelectedPreset, $$value => $$invalidate(1, $SelectedPreset = $$value));
+    	component_subscribe($$self, SelectedPreset, $$value => $$invalidate(2, $SelectedPreset = $$value));
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('PresetsList', slots, []);
     	let { numberOfPresets = 6 } = $$props;
+    	let tooltipTexts = [];
 
     	const presetChange = presetIndex => {
     		SaveCurrentPreset();
@@ -4993,6 +5011,23 @@ var app = (function () {
     		);
     	};
 
+    	const UpdateTooltips = () => {
+    		for (let i = 0; i < numberOfPresets; i++) {
+    			let localStorageKey = "preset" + i;
+    			let presetString = window.localStorage.getItem(localStorageKey);
+
+    			let presetClass = presetString === null
+    			? "Choose Class"
+    			: JSON.parse(presetString.split("&")[0]);
+
+    			if (presetClass === "Choose Class") {
+    				$$invalidate(1, tooltipTexts[i] = "No Class", tooltipTexts);
+    			} else {
+    				$$invalidate(1, tooltipTexts[i] = presetClass, tooltipTexts);
+    			}
+    		}
+    	};
+
     	const writable_props = ['numberOfPresets'];
 
     	Object.keys($$props).forEach(key => {
@@ -5011,24 +5046,42 @@ var app = (function () {
     		SelectedEngravings,
     		NegativeEngravings,
     		numberOfPresets,
+    		tooltipTexts,
     		presetChange,
     		SaveCurrentPreset,
     		GetNewPreset,
+    		UpdateTooltips,
+    		$SelectedClass,
     		$NegativeEngravings,
     		$SelectedEngravings,
-    		$SelectedClass,
     		$SelectedPreset
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('numberOfPresets' in $$props) $$invalidate(0, numberOfPresets = $$props.numberOfPresets);
+    		if ('tooltipTexts' in $$props) $$invalidate(1, tooltipTexts = $$props.tooltipTexts);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [numberOfPresets, $SelectedPreset, presetChange, click_handler];
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*$SelectedClass*/ 16) {
+    			{
+    				UpdateTooltips();
+    			}
+    		}
+    	};
+
+    	return [
+    		numberOfPresets,
+    		tooltipTexts,
+    		$SelectedPreset,
+    		presetChange,
+    		$SelectedClass,
+    		click_handler
+    	];
     }
 
     class PresetsList extends SvelteComponentDev {
