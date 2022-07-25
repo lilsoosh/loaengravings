@@ -1,6 +1,12 @@
 import { readable } from 'svelte/store';
 import { writable } from 'svelte/store';
 
+const retrievedSelectedPreset = window.localStorage.getItem("selectedPreset");
+export const SelectedPreset = writable(retrievedSelectedPreset === null ? 0 : retrievedSelectedPreset);
+SelectedPreset.subscribe(value => {
+        window.localStorage.setItem("selectedPreset", value);
+});
+
 const retrievedSelectedClass = window.localStorage.getItem("advclass");
 export const SelectedClass = writable(retrievedSelectedClass === null ? 'Choose Class' : retrievedSelectedClass);
 SelectedClass.subscribe(value => {

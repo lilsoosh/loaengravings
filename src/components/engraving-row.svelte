@@ -7,7 +7,7 @@
     import { NegativeEngravings } from '../stores/engravingStore';
     import { CombatEngravingStore } from '../stores/engravingStore';
     import { ClassEngravingStore } from '../stores/engravingStore';
-    import { fade, fly, slide } from 'svelte/transition';
+    import { fade, fly } from 'svelte/transition';
 
     export let engraving = '';
     let engravingInput = engraving;
@@ -169,7 +169,7 @@
     }
 </script>
 
-<tr class="row-container" class:in-transition={inTransition} class:error={error} in:fly|local="{{ y: 40, duration: 1000 }}" out:fly|local="{{ x: 50, duration: 500 }}" on:introstart="{() => inTransition=true}" on:introend="{() => inTransition=false}" on:outrostart="{() => inTransition=true}">
+<tr class="row-container" class:in-transition={inTransition} class:error={error} in:fly|local="{{ y: 40, duration: 1000 }}" out:fly|local="{{ x: 50, duration: 300 }}" on:introstart="{() => inTransition=true}" on:introend="{() => inTransition=false}" on:outrostart="{() => inTransition=true}">
     <td class="engraving-selection">
         <img src={engravingImgURL} alt="{engraving}" class="engraving-img" class:inactive-engraving={engravingNodesValue < 5}>
         <div class="engraving-dropdown"><FilterDropdown menuItems={engravingMenuItems} bind:inputValue={engravingInput} placeholderText="Add Engraving" on:blur={engravingDropdownBlur} on:valueChange={engravingChange} width="150px" fontSize="12px" disabled={negativeEngraving}/></div>

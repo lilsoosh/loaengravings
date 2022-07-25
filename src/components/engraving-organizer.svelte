@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     import ClassDropdown from '../shared/classDropdown.svelte';
     import EngravingRow from './engraving-row.svelte';
+    import PresetsList from '../shared/presetsList.svelte';
     import ClearData from '../shared/clearData.svelte';
     import { SelectedClass } from '../stores/engravingStore';
     import { SelectedEngravings } from '../stores/engravingStore';
@@ -13,10 +14,11 @@
     });
 
     let classIconURL = "";
-    const changeClassIcon = () => {
+    const changeClassIcon = (advClass) => {
         classIconURL = $SelectedClass.toLowerCase().replace(" ", "");
         classIconURL = './images/class_icons/png/' + classIconURL + ".png";
     };
+    $:{changeClassIcon($SelectedClass)}
 </script>
 <div class="class-container">
     <div class="class-icon-container">
@@ -27,7 +29,10 @@
     <div class="class-dropdown-container">
         <ClassDropdown value={$SelectedClass} on:valueChange={changeClassIcon}/>
     </div>
-    <div class="clear-data-button"><ClearData/></div>
+    <div class="presets-container">
+        <div class="presets-list"><PresetsList numberOfPresets={6}/></div>
+        <div class="clear-data-button"><ClearData/></div>
+    </div>
 </div>
 <table>
     <tr>
@@ -94,6 +99,7 @@
         position: relative;
         text-align: left;
         height: 50px;
+        margin-bottom: 10px;
     }
 
     .class-dropdown-container{
@@ -118,12 +124,20 @@
         margin-left: 5%;
     }
 
-    .clear-data-button{
+    .presets-container{
         display: inline-flex;
         float: right;
-        margin: 10px 0px;
         margin-right: 5%;
-        vertical-align: middle;
+    }
+
+    .presets-list{
+        display: inline-flex;
+        margin: 10px 0px;
+    }
+
+    .clear-data-button{
+        display: inline-flex;
+        margin: 10px 0px;
     }
 
     table{
