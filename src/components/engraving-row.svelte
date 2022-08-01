@@ -1,5 +1,5 @@
 <script>
-    import { onMount, onDestroy } from 'svelte';
+    import { onMount, afterUpdate } from 'svelte';
     import FilterDropdown from '../shared/filterDropdown.svelte';
     import SelectDropdown from '../shared/selectDropdown.svelte';
     import { SelectedClass } from '../stores/engravingStore';
@@ -64,6 +64,10 @@
             emptyNodeSRC = nodeSrcURLs[5];
         }
     });
+
+    afterUpdate(() => {
+        updateNodes();
+    })
     
     const engravingChange = (e) => {
         //if adding engraving

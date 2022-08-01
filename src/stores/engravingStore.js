@@ -1,10 +1,21 @@
 import { readable } from 'svelte/store';
 import { writable } from 'svelte/store';
 
+window.onerror = () => {
+        alert("Error loading page. Local storage cleared.");
+        localStorage.clear();
+};
+
 const retrievedSelectedPreset = window.localStorage.getItem("selectedPreset");
 export const SelectedPreset = writable(retrievedSelectedPreset === null ? 0 : retrievedSelectedPreset);
 SelectedPreset.subscribe(value => {
         window.localStorage.setItem("selectedPreset", value);
+});
+
+const retrievedSelectedPresetName = window.localStorage.getItem("selectedPresetName");
+export const SelectedPresetName = writable(retrievedSelectedPresetName === null ? '' : retrievedSelectedPresetName);
+SelectedPresetName.subscribe(value => {
+        window.localStorage.setItem("selectedPresetName", value);
 });
 
 const retrievedSelectedClass = window.localStorage.getItem("advclass");

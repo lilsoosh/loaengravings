@@ -2,9 +2,13 @@
     import { onMount } from 'svelte';
     import ClassDropdown from '../shared/classDropdown.svelte';
     import EngravingRow from './engraving-row.svelte';
+    import PresetNameInput from '../shared/presetNameInput.svelte';
     import PresetsList from '../shared/presetsList.svelte';
+    import ImportExportButton from '../shared/importExportButton.svelte';
+    import ImportExportModal from '../shared/importExportModal.svelte';
     import ClearData from '../shared/clearData.svelte';
     import { SelectedClass } from '../stores/engravingStore';
+    import { SelectedPresetName } from '../stores/engravingStore';
     import { SelectedEngravings } from '../stores/engravingStore';
     import { NegativeEngravings } from '../stores/engravingStore';
 
@@ -19,7 +23,14 @@
         classIconURL = './images/class_icons/png/' + classIconURL + ".png";
     };
     $:{changeClassIcon($SelectedClass)}
+
+    let modalActive = false;
+    const toggleModal = () => {
+        modalActive = !modalActive;
+    };
 </script>
+
+<ImportExportModal on:click={toggleModal} {modalActive}/>
 <div class="class-container">
     <div class="class-icon-container">
     {#if $SelectedClass != "Choose Class"}
@@ -29,9 +40,12 @@
     <div class="class-dropdown-container">
         <ClassDropdown value={$SelectedClass} on:valueChange={changeClassIcon}/>
     </div>
+    <div class="preset-name-container">
+        <PresetNameInput inputValue={$SelectedPresetName}/>
+    </div>
     <div class="presets-container">
         <div class="presets-list"><PresetsList numberOfPresets={6}/></div>
-        <div class="clear-data-button"><ClearData/></div>
+        <div class="import-export-button"><ImportExportButton on:click={toggleModal}/></div>
     </div>
 </div>
 <table>
@@ -93,6 +107,7 @@
         <EngravingRow engraving={engravingRow.engraving} id={engravingRow.id} engravingNodes={engravingRow.nodes} negativeEngraving=true/>
     {/each}
 </table>
+<div class="clear-data-button"><ClearData/></div>
 
 <style>
     .class-container{
@@ -105,6 +120,12 @@
     .class-dropdown-container{
         display: inline-flex;
         vertical-align: middle;
+    }
+
+    .preset-name-container{
+        display: inline-flex;
+        vertical-align: middle;
+        margin: 0px 20px;
     }
 
     .class-icon{
@@ -135,9 +156,15 @@
         margin: 10px 0px;
     }
 
-    .clear-data-button{
+    .import-export-button{
         display: inline-flex;
         margin: 10px 0px;
+    }
+
+    .clear-data-button{
+        position: relative;
+        margin: 20px 5% 10px auto;
+        width: 100px;
     }
 
     table{

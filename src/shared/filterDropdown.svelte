@@ -96,6 +96,7 @@
     }
 
     input:focus{
+        cursor: text;
         box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
     }
 

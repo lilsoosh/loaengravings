@@ -1,5 +1,7 @@
 <script>
+    import { onMount } from 'svelte';
     import { SelectedPreset } from '../stores/engravingStore';
+    import { SelectedPresetName } from '../stores/engravingStore';
     import { SelectedClass } from '../stores/engravingStore';
     import { SelectedEngravings } from '../stores/engravingStore';
     import { NegativeEngravings } from '../stores/engravingStore';
@@ -7,15 +9,20 @@
     export let numberOfPresets = 6;
     let tooltipTexts = [];
 
+    onMount(() => {
+        UpdateTooltips();
+    })
+
     const presetChange = (presetIndex) => {
         SaveCurrentPreset();
         $SelectedPreset = presetIndex;
         GetNewPreset(presetIndex);
+        UpdateTooltips();
     }
 
     const SaveCurrentPreset = () => {
         let localStorageKey = "preset" + $SelectedPreset.toString();
-        let presetString = JSON.stringify($SelectedClass) + "&" + JSON.stringify($SelectedEngravings) + "&" + JSON.stringify($NegativeEngravings);
+        let presetString = JSON.stringify($SelectedPresetName) + "&" + JSON.stringify($SelectedClass) + "&" + JSON.stringify($SelectedEngravings) + "&" + JSON.stringify($NegativeEngravings);
         window.localStorage.setItem(localStorageKey, presetString);
     }
 
@@ -23,32 +30,29 @@
     const GetNewPreset = (presetIndex) => {
         let localStorageKey = "preset" + presetIndex;
         let presetString = window.localStorage.getItem(localStorageKey);
-        presetString = presetString === null ? "\"Choose Class\"&[]&[{\"id\":-1,\"engraving\":\"Atk. Power Reduction\",\"nodes\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"]},{\"id\":-2,\"engraving\":\"Atk. Speed Reduction\",\"nodes\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"]},{\"id\":-3,\"engraving\":\"Defense Reduction\",\"nodes\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"]},{\"id\":-4,\"engraving\":\"Move Speed Reduction\",\"nodes\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"]}]" : presetString;
+        presetString = presetString === null ? "\"\"&\"Choose Class\"&[]&[{\"id\":-1,\"engraving\":\"Atk. Power Reduction\",\"nodes\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"]},{\"id\":-2,\"engraving\":\"Atk. Speed Reduction\",\"nodes\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"]},{\"id\":-3,\"engraving\":\"Defense Reduction\",\"nodes\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"]},{\"id\":-4,\"engraving\":\"Move Speed Reduction\",\"nodes\":[\"-\",\"-\",\"-\",\"-\",\"-\",\"-\",\"-\"]}]" : presetString;
         let newPresetArray = presetString.split("&");
-        $SelectedEngravings = [];
         setTimeout(() => {
-            $SelectedClass = JSON.parse(newPresetArray[0]);
-            $SelectedEngravings = JSON.parse(newPresetArray[1]);
-            $NegativeEngravings = JSON.parse(newPresetArray[2]);
-        }, 500);
+            $SelectedPresetName = JSON.parse(newPresetArray[0]);
+            $SelectedClass = JSON.parse(newPresetArray[1]);
+            $SelectedEngravings = JSON.parse(newPresetArray[2]);
+            $NegativeEngravings = JSON.parse(newPresetArray[3]);
+        }, 0);
     }
     
     const UpdateTooltips = () => {
         for (let i = 0; i < numberOfPresets; i++){
             let localStorageKey = "preset" + i;
             let presetString = window.localStorage.getItem(localStorageKey);
-            let presetClass = presetString === null ? "Choose Class" : JSON.parse(presetString.split("&")[0]);
-            if (presetClass === "Choose Class"){
-                tooltipTexts[i] = "No Class";
-            } else {
+            let presetName = presetString === null ? "" : JSON.parse(presetString.split("&")[0]);
+            let presetClass = presetString === null ? "Choose Class" : JSON.parse(presetString.split("&")[1]);
+            presetClass = presetClass === "Choose Class" ? "No Class" : presetClass;
+            if (presetName === ""){
                 tooltipTexts[i] = presetClass;
+            } else {
+                tooltipTexts[i] = "\"" + presetName + "\"\n" + presetClass;
             }
         }
-    }
-
-    $: {
-        $SelectedClass;
-        UpdateTooltips();
     }
 </script>
 
@@ -117,7 +121,6 @@
         cursor: default;
     }
 
-
     .tooltip-text {
         position: absolute;
         width: 100px;
@@ -128,6 +131,7 @@
         background-color: #333333;
         color: white;
         text-align: center;
+        white-space: pre-wrap;
         
         box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
         z-index: 1;
@@ -141,7 +145,7 @@
     .tooltip-text::after {
         content: " ";
         position: absolute;
-        bottom: 100%;  /* At the top of the tooltip */
+        bottom: 100%;
         left: 50%;
         margin-left: -5px;
         border-width: 5px;

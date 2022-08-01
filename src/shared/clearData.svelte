@@ -1,9 +1,11 @@
 <script>
+    import { SelectedPresetName } from '../stores/engravingStore';
     import { SelectedClass } from '../stores/engravingStore';
     import { SelectedEngravings } from '../stores/engravingStore';
     import { NegativeEngravings } from '../stores/engravingStore';
 
 const clearData = () => {
+    $SelectedPresetName = '';
     $SelectedClass = 'Choose Class';
     $SelectedEngravings = [];
     $NegativeEngravings = [
@@ -16,7 +18,7 @@ const clearData = () => {
 
 </script>
 
-<button type="button" on:click={clearData}>Reset Preset</button>
+<button type="button" on:click={clearData}>Clear Preset</button>
 
 <style>
     button{
@@ -34,6 +36,6 @@ const clearData = () => {
 
     button:hover{
         color: white;
-        background: #333333;
+        background: rgba(255, 0, 0, 0.4);
     }
 </style>
